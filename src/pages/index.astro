@@ -1,5 +1,15 @@
 ---
-
+import HeroSection  from "../uis/HeroSection.astro";
+import CitiesSection from "../uis/CitiesSection.astro";
+import WhySection from "../uis/WhySection.astro";
+import IncludesSection from "../uis/IncludesSection.astro";
+import ContentSection from "../uis/ContentSection.astro";
+import PricingSection from "../uis/PricingSection.astro";
+import InstructorSection from "../uis/InstructorSection.astro";
+import CTASection from "../uis/CTASection.astro";
+import TestimonialsSection from "../uis/TestimonialsSection.astro";
+import Footer from "../uis/Footer.astro";
+import "../styles/global.css"
 ---
 
 <html lang="en">
@@ -11,6 +21,17 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main class="min-h-screen">
+			<HeroSection />
+			<CitiesSection />
+			<WhySection />
+			<IncludesSection />
+			<ContentSection />
+			<PricingSection />
+			<InstructorSection />
+			<CTASection />
+			<TestimonialsSection />
+			<Footer />
+		</main>
 	</body>
 </html>

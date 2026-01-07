@@ -1,0 +1,43 @@
+---
+const testimonials = [
+  {
+    video: "https://ext.same-assets.com/2397237772/2035483755.mp4",
+    poster: "https://ext.same-assets.com/2397237772/625917128.jpeg",
+  },
+  {
+    video: "https://ext.same-assets.com/2397237772/2422884914.mp4",
+    poster: "https://ext.same-assets.com/2397237772/3052004362.jpeg",
+  },
+  {
+    video: "https://ext.same-assets.com/2397237772/3986450338.mp4",
+    poster: "https://ext.same-assets.com/2397237772/1749925750.jpeg",
+  },
+];
+---
+
+<section class="bg-white py-16 md:py-24">
+    <div class="container mx-auto px-6">
+    <h2 class="mb-12 text-center text-lg font-medium uppercase tracking-[0.2em] text-[#060606]">
+        Testimonios
+    </h2>
+
+    <div class="grid gap-6 md:grid-cols-3">
+        {testimonials.map((testimonial) => (
+        <div
+            class="group relative overflow-hidden rounded-2xl bg-gray-200"
+        >
+            <video
+            class="h-[400px] w-full object-cover"
+            controls
+            plays-inline
+            poster={testimonial.poster}
+            preload="metadata"
+            >
+            <source src={testimonial.video} type="video/mp4" />
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        ))}
+    </div>
+    </div>
+</section>
