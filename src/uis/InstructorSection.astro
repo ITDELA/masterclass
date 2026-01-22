@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import anderson from '../images/anderson.jpeg';
+
 const includes = [
   "Certificación profesional (impresa y digital)",
   "Guía de estudio + 25 protocolos paso a paso",
@@ -15,8 +18,8 @@ const includes = [
     <div class="grid items-center gap-12 lg:grid-cols-2">
         {/* Image */}
         <div class="relative overflow-hidden rounded-lg shadow-lg">
-        <img
-            src="https://ext.same-assets.com/2397237772/3067664889.jpeg"
+        <Image
+            src={anderson}
             alt="Práctica de Masterclass"
             class="h-full w-full object-cover"
         />

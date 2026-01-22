@@ -9,29 +9,18 @@ import InstructorSection from "../uis/InstructorSection.astro";
 import CTASection from "../uis/CTASection.astro";
 import TestimonialsSection from "../uis/TestimonialsSection.astro";
 import Footer from "../uis/Footer.astro";
-import "../styles/global.css"
+import Layout from "../layout/main.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<main class="min-h-screen">
-			<HeroSection />
-			<CitiesSection />
-			<WhySection />
-			<IncludesSection />
-			<ContentSection />
-			<PricingSection />
-			<InstructorSection />
-			<CTASection />
-			<TestimonialsSection />
-			<Footer />
-		</main>
-	</body>
-</html>
+<Layout >
+	<HeroSection />
+	<CitiesSection />
+	<WhySection />
+	<IncludesSection />
+	<ContentSection />
+	<PricingSection />
+	<InstructorSection />
+	<CTASection />
+	<TestimonialsSection />
+	<Footer />
+</Layout>

@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+* {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+.btn {
+  font-family: "Space Grotesk", sans-serif;
+}

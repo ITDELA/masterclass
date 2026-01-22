@@ -1,16 +1,20 @@
 ---
+
+import file from "./assets/PROGRAMA-EDUCATIVO.pdf";
+
 ---
 
-<section class="relative min-h-screen w-full overflow-hidden">
+<section class="relative h-[70vh] w-full overflow-hidden">
     {/* Background Image */}
     <div class="absolute inset-0">
-    <img
-        src="https://ext.same-assets.com/2397237772/422284090.jpeg"
-        alt="Beauty background"
-        class="h-full w-full object-cover object-center"
-    />
+        <div class="fullSection none noBorder radius0 none c-section c-wrapper section-kr8xsdE_nP h-full w-full">
+            <video autoplay="" playsinline="" loop="" poster="" muted="" class="bgVideo cover none h-full w-full object-cover" style="opacity:1;border-radius:-2px;" 
+            src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68cb3ab48c44371097df542e.mp4" 
+            />
+        </div>
+
     {/* Gradient overlay for better text readability */}
-    <div class="absolute inset-0 bg-gradient-to-r from-[#f9f8f8]/90 via-[#f9f8f8]/50 to-transparent" />
+    <div class="absolute inset-0" />
     </div>
 
     {/* Logo */}
@@ -18,41 +22,34 @@
     <img
         src="https://ext.same-assets.com/2397237772/2291279987.png"
         alt="GenetikPlux Logo"
-        class="h-14 w-auto md:h-20"
+        class="h-12 w-auto"
     />
     </div>
 
     {/* Content */}
-    <div class="relative z-10 flex min-h-[calc(100vh-100px)] items-center">
-    <div class="container mx-auto px-6 lg:px-20">
-        <div class="max-w-2xl">
-        <h1 class="font-playfair text-4xl font-normal leading-tight text-[#060606] md:text-5xl lg:text-6xl">
-            Conviértete en
-            <br />
-            experto en
-            <br />
-            Exosomas con
-            <br />
-            GenetikPlux:
-        </h1>
+    <div class="relative z-10 flex h-full items-center">
+        <div class="container mx-auto">
+            <div class="max-w-4xl">
+            <h1 class="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+                Conviértete en experto en Exosomas con GenetikPlux:
+            </h1>
 
-        <p class="mt-6 font-playfair text-xl font-light text-[#060606] md:text-2xl">
-            Formación premium con la última
-            <br />
-            tecnología en estética avanzada.
-        </p>
+            <p class="mt-6 text-3xl font-normal text-white md:text-4xl">
+                Formación premium con la última
+                <br />
+                tecnología en estética avanzada.
+            </p>
 
-        <p class="mt-4 text-base font-semibold tracking-wide text-[#060606] md:text-lg">
-            Certificación Profesional inmediata
-        </p>
+            <p class="mt-4 text-base font-medium tracking-wide text-[#060606] md:text-lg">
+                Certificación Profesional inmediata
+            </p>
 
-        <a
-            href="#programa"
-            class="mt-10 inline-block bg-white px-10 py-4 text-sm font-medium uppercase tracking-[0.2em] text-[#060606] shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white"
-        >
-            Programa Educativo
-        </a>
+            <a href="/masterclass/assets/PROGRAMA-EDUCATIVO.pdf" target="_blank" rel="noopener"
+                class="mt-10 btn inline-block bg-white px-10 py-4 text-md font-medium uppercase tracking-[0.2em] text-[#060606] shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white"
+            >
+                Programa Educativo
+            </a>
+            </div>
         </div>
-    </div>
     </div>
 </section>
