@@ -10,30 +10,39 @@ const benefits = [
 
 <section class="bg-[#060606] py-16 md:py-24">
     <div class="container mx-auto px-6 lg:px-20">
-        <div class="mx-auto max-w-2xl text-center">
-            <h2 class="font-playfair text-3xl font-normal text-white md:text-4xl">
-            ¿Por qué esta
-            <br />
-            certificación cambia
-            <br />
-            todo?
-            </h2>
+        <div class="mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row md:items-start">
+            <div class="w-full md:w-1/2">
+                <div class="text-center md:text-left">
+                    <h2 class="font-playfair text-3xl font-normal text-white md:text-4xl">
+                    ¿Por qué esta
+                    <br />
+                    certificación cambia
+                    <br />
+                    todo?
+                    </h2>
 
-            <p class="mt-4 text-sm text-white/70">
-            Rejuvenecimiento basado en evidencia científica
-            </p>
+                    <p class="mt-4 text-sm text-white/70">
+                    Rejuvenecimiento basado en evidencia científica
+                    </p>
+                </div>
 
-            <ul class="mt-10 space-y-6 text-left">
-            {benefits.map((benefit) => (
-                <li class="flex items-start gap-4">
-                    <span class="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-white" />
-                    <span class="text-base text-white md:text-lg">{benefit}</span>
-                </li>
-            ))}
-            </ul>
+                <ul class="mt-10 space-y-6 text-left">
+                {benefits.map((benefit) => (
+                    <li class="flex items-start gap-4">
+                        <span class="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-white" />
+                        <span class="text-base text-white md:text-lg">{benefit}</span>
+                    </li>
+                ))}
+                </ul>
+            </div>
+
+            <div class="w-full md:w-1/2">
+                <div class="overflow-hidden rounded-2xl bg-black/20">
+                    <video autoplay="" playsinline="" loop="" poster="" muted="" class="h-[320px] w-full object-cover md:h-[420px]" style="opacity:1;border-radius:-2px;" 
+                        src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68c5e6d44bce0bd4a657d179.mp4" 
+                    />
+                </div>
+            </div>
         </div>
-        <video autoplay="" playsinline="" loop="" poster="" muted="" class="bgVideo cover none h-full w-full object-cover" style="opacity:1;border-radius:-2px;" 
-            src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68c5e6d44bce0bd4a657d179.mp4" 
-        />
     </div>
 </section>

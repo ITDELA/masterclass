@@ -1,10 +1,110 @@
 @import "tailwindcss";
 
-* {
-    font-family: "Space Grotesk", sans-serif;
+@font-face {
+  font-family: "Grotesk";
+  src: url('../assets/68c33497e4788b20d2753bf2.otf') format('truetype');
+  font-display: swap;
 }
 
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .btn {
   font-family: "Space Grotesk", sans-serif;
 }
+
+
+.hero_text {
+  font-family: "Grotesk", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-quattrocento {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--beige);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--beige-dark);
+}
+
+/* Hero */
+.hero {
+  @apply relative h-[70vh] w-full overflow-hidden;
+}
+
+.hero_bg {
+  @apply absolute inset-0;
+}
+
+.hero_bg-banner {
+  @apply h-full w-full border-0 rounded-none ;
+}
+
+.hero_bg-logo {
+  @apply relative z-10 flex justify-center pt-8 md:pt-12;
+}
+
+.hero_bg-logo_img {
+  @apply h-12 w-auto;
+}
+
+.hero_aside {
+  @apply relative z-10 flex h-full items-center;
+}
+
+.hero_aside-wrapper {
+  @apply container mx-auto;
+}
+
+.hero_aside-title {
+  @apply md:text-4xl lg:text-5xl text-5xl text-white;
+  font-family: "Grotesk", sans-serif;
+}
+
+.hero_aside-subtitle_first {
+  @apply mt-6 text-3xl font-normal text-white md:text-4xl;
+}
+
+.hero_aside-subtitle_second {
+  @apply mt-1 text-3xl font-normal text-white md:text-4xl;
+}
+
+.hero_aside-text {
+  @apply mt-4 text-lg font-medium tracking-wide text-[#060606] md:text-2xl;
+}
+
+.hero_aside-btn {
+  @apply mt-10 px-10 py-4 font-medium uppercase inline-block shadow-lg tracking-[0.2em] text-[#060606] bg-white hover:bg-[#060606] hover:text-white transition-all duration-300; 
+}
+

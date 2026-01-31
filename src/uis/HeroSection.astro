@@ -1,54 +1,65 @@
 ---
-
-import file from "./assets/PROGRAMA-EDUCATIVO.pdf";
+import { SplitText, BlurText } from "../components";
+import 'animate.css';
 
 ---
 
-<section class="relative h-[70vh] w-full overflow-hidden">
-    {/* Background Image */}
-    <div class="absolute inset-0">
-        <div class="fullSection none noBorder radius0 none c-section c-wrapper section-kr8xsdE_nP h-full w-full">
-            <video autoplay="" playsinline="" loop="" poster="" muted="" class="bgVideo cover none h-full w-full object-cover" style="opacity:1;border-radius:-2px;" 
+<section class="hero">
+    <div class="hero_bg">
+        <div class="hero_bg-banner">
+            <video autoplay="" playsinline="" loop="" poster="" muted="" class="bgVideo cover none h-full w-full object-cover"
             src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68cb3ab48c44371097df542e.mp4" 
             />
         </div>
-
-    {/* Gradient overlay for better text readability */}
-    <div class="absolute inset-0" />
     </div>
-
-    {/* Logo */}
-    <div class="relative z-10 flex justify-center pt-8 md:pt-12">
-    <img
-        src="https://ext.same-assets.com/2397237772/2291279987.png"
-        alt="GenetikPlux Logo"
-        class="h-12 w-auto"
-    />
+    <div class="hero_bg-logo">
+        <img
+            alt="GenetikPlux Logo"
+            class="hero_bg-logo_img"
+            src="https://ext.same-assets.com/2397237772/2291279987.png"
+        />
     </div>
-
-    {/* Content */}
-    <div class="relative z-10 flex h-full items-center">
-        <div class="container mx-auto">
+    <div class="hero_aside">
+        <div class="hero_aside-wrapper">
             <div class="max-w-4xl">
-            <h1 class="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
-                Conviértete en experto en Exosomas con GenetikPlux:
-            </h1>
+                <h1 class="hero_aside-title">
+                    Conviértete en experto en Exosomas con GenetikPlux:
+                </h1>
+                <BlurText
+                    text="Formación premium con la última"
+                    delay={300}
+                    animateBy="words"
+                    direction="top"
+                    className="hero_aside-subtitle_first"
+                    client:load
+                />
+                <BlurText
+                    text="tecnología en estética avanzada."
+                    delay={1500}
+                    animateBy="words"
+                    direction="bottom"
+                    className="hero_aside-subtitle_second"
+                    client:load
+                />
+                <SplitText 
+                    text="Certificación Profesional inmediata"
+                    className="hero_aside-text"
+                    delay={250}
+                    duration={1.25}
+                    ease="power3.out"
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                    threshold={0.1}
+                    rootMargin="-100px"
+                    client:load
+                />
 
-            <p class="mt-6 text-3xl font-normal text-white md:text-4xl">
-                Formación premium con la última
-                <br />
-                tecnología en estética avanzada.
-            </p>
-
-            <p class="mt-4 text-base font-medium tracking-wide text-[#060606] md:text-lg">
-                Certificación Profesional inmediata
-            </p>
-
-            <a href="/masterclass/assets/PROGRAMA-EDUCATIVO.pdf" target="_blank" rel="noopener"
-                class="mt-10 btn inline-block bg-white px-10 py-4 text-md font-medium uppercase tracking-[0.2em] text-[#060606] shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white"
-            >
-                Programa Educativo
-            </a>
+                <div class="pt-20">
+                    <a href="/masterclass/assets/PROGRAMA-EDUCATIVO.pdf" target="_blank" rel="noopener" class="hero_aside-btn animate__animated animate__pulse">
+                        Programa Educativo
+                    </a>
+                </div>
             </div>
         </div>
     </div>

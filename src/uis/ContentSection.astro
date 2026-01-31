@@ -18,17 +18,17 @@ const contents = [
 <section class="bg-[#060606] py-16 md:py-20">
     <div class="container mx-auto px-6">
     <div class="text-center">
-        <h2 class="font-playfair text-3xl font-normal text-white md:text-4xl lg:text-5xl">
+        <h2 class="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
         Contenido exclusivo
         </h2>
-        <p class="mt-4 text-base text-white/70 md:text-lg">
+        <p class="mt-4 text-xl text-white/70 md:text-2xl">
         Un evento basado en evidencia científica con enfoque práctico
         </p>
     </div>
 
     <div class="mt-12 grid gap-8 md:grid-cols-3">
         {contents.map((content, index) => (
-        <div key={index} class="text-center">
+        <div key={index} class="text-center w-3xs">
             <h3 class="font-playfair text-xl font-semibold italic text-white md:text-2xl">
             {content.title}
             </h3>
