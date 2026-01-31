@@ -1,11 +1,13 @@
 ---
+import Layout from "../layout/main.astro";
+
 import HeroSection  from "../uis/HeroSection.astro";
 import CitiesSection from "../uis/CitiesSection.astro";
 import IncludesSection from "../uis/IncludesSection.astro";
 import ContentSection from "../uis/ContentSection.astro";
 import InstructorSection from "../uis/InstructorSection.astro";
 import Footer from "../uis/Footer.astro";
-import Layout from "../layout/main.astro";
+
 import arrugas from "../assets/arrugas.png"
 import cansados from "../assets/cansados.png"
 import manchas from "../assets/manchas.png"
@@ -53,10 +55,10 @@ const mancha = {
 	img: manchas,
 	alt: "Cero Manchas"
 }
-
+const title = "Masterclass GenetikPlux"
 ---
 
-<Layout >
+<Layout lang="en" title={title}>
 	<HeroSection />
 	<CitiesSection />
 	<IncludesSection isDark include={arruga} />

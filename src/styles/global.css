@@ -102,6 +102,18 @@ html {
   @apply mt-10 px-10 py-4 font-medium uppercase inline-block shadow-lg tracking-[0.2em] text-[#060606] bg-white hover:bg-[#060606] hover:text-white transition-all duration-300; 
 }
 
+.hero_lang {
+  @apply absolute left-6 right-auto top-6 z-20 md:left-auto md:right-6;
+}
+
+.hero_lang-btn {
+  @apply inline-flex items-center gap-2 rounded-full bg-black/50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm transition-colors hover:bg-black/70;
+}
+
+.hero_lang-icon {
+  @apply h-4 w-4;
+}
+
 /* Cities */
 .cities {
   @apply bg-white py-16 md:py-24;
