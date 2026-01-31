@@ -1,27 +1,27 @@
 ---
-
+const title = "Inversión"
+const cta = "Reservar Cupo"
+const card1Title = "Preventa"
+const card1Price = "$750"
+const card1Note = "Reserva con 30%: $225."
+const card2Title = "Dia del Evento"
+const card2Price = "$850"
+const card2Note = "Pago completo."
 ---
 
-<section class="bg-white py-16 md:py-24" id="programa">
-    <div class="container mx-auto px-6">
-    <h2 class="mb-12 text-center font-playfair text-4xl font-normal text-[#060606] md:text-5xl">
-        Inversión
-    </h2>
+<section class="pricing" id="programa">
+    <div class="pricing_container">
+    <h2 class="pricing_title">{title}</h2>
 
-    <div class="mx-auto grid max-w-3xl gap-8 md:grid-cols-2">
-        {/* Preventa */}
-        <div class="group flex flex-col rounded-2xl bg-[#060606] p-8 text-center transition-all duration-300 hover:scale-105">
-        <h3 class="text-lg font-medium uppercase tracking-[0.2em] text-white">
-            Preventa
-        </h3>
+    <div class="pricing_grid">
+        <div class="pricing_card">
+        <h3 class="pricing_card-title">{card1Title}</h3>
 
-        <div class="my-6 font-playfair text-5xl font-bold text-white md:text-6xl">
-            $750
-        </div>
+        <div class="pricing_card-price">{card1Price}</div>
 
-        <div class="flex items-center justify-center gap-2">
+        <div class="pricing_card-noteRow">
             <svg
-            class="h-5 w-5 text-[#4b9ddb]"
+            class="pricing_card-icon"
             viewBox="0 0 20 20"
             fill="currentColor"
             >
@@ -31,32 +31,25 @@
                 clip-rule="evenodd"
             />
             </svg>
-            <span class="text-sm italic text-white/80">
-            Reserva con 30%: $225.
-            </span>
+            <span class="pricing_card-note">{card1Note}</span>
         </div>
 
         <a
             href="#inscribirme"
-            class="mt-8 rounded-lg bg-white px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-[#060606] transition-all duration-300 hover:bg-[#bfa792] hover:text-white"
+            class="pricing_card-btn"
         >
-            Reservar Cupo
+            {cta}
         </a>
         </div>
 
-        {/* Día del Evento */}
-        <div class="group flex flex-col rounded-2xl bg-[#060606] p-8 text-center transition-all duration-300 hover:scale-105">
-        <h3 class="text-lg font-medium uppercase tracking-[0.2em] text-white">
-            Dia del Evento
-        </h3>
+        <div class="pricing_card">
+        <h3 class="pricing_card-title">{card2Title}</h3>
 
-        <div class="my-6 font-playfair text-5xl font-bold text-white md:text-6xl">
-            $850
-        </div>
+        <div class="pricing_card-price">{card2Price}</div>
 
-        <div class="flex items-center justify-center gap-2">
+        <div class="pricing_card-noteRow">
             <svg
-            class="h-5 w-5 text-[#4b9ddb]"
+            class="pricing_card-icon"
             viewBox="0 0 20 20"
             fill="currentColor"
             >
@@ -66,16 +59,14 @@
                 clip-rule="evenodd"
             />
             </svg>
-            <span class="text-sm italic text-white/80">
-            Pago completo.
-            </span>
+            <span class="pricing_card-note">{card2Note}</span>
         </div>
 
         <a
             href="#inscribirme"
-            class="mt-8 rounded-lg bg-white px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-[#060606] transition-all duration-300 hover:bg-[#bfa792] hover:text-white"
+            class="pricing_card-btn"
         >
-            Reservar Cupo
+            {cta}
         </a>
         </div>
     </div>
