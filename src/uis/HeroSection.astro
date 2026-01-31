@@ -2,65 +2,68 @@
 import { SplitText, BlurText } from "../components";
 import 'animate.css';
 
+const title = "Conviértete en experto en Exosomas con GenetikPlux:"
+const subtitle_first = "Formación premium con la última"
+const subtitle_second = "tecnología en estética avanzada."
+const text = "Certificación Profesional inmediata"
+const btn = "Programa Educativo"
+const alt_logo = "GenetikPlux Logo"
 ---
 
 <section class="hero">
     <div class="hero_bg">
-        <div class="hero_bg-banner">
-            <video autoplay="" playsinline="" loop="" poster="" muted="" class="bgVideo cover none h-full w-full object-cover"
-            src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68cb3ab48c44371097df542e.mp4" 
-            />
-        </div>
+			<div class="hero_bg-banner">
+				<video autoplay="" playsinline="" loop="" poster="" muted="" class="hero_bg-video"
+					src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68cb3ab48c44371097df542e.mp4" 
+				/>
+			</div>
     </div>
     <div class="hero_bg-logo">
-        <img
-            alt="GenetikPlux Logo"
-            class="hero_bg-logo_img"
-            src="https://ext.same-assets.com/2397237772/2291279987.png"
-        />
+			<img
+				alt={alt_logo}
+				class="hero_bg-logo_img"
+				src="https://ext.same-assets.com/2397237772/2291279987.png"
+			/>
     </div>
     <div class="hero_aside">
-        <div class="hero_aside-wrapper">
-            <div class="max-w-4xl">
-                <h1 class="hero_aside-title">
-                    Conviértete en experto en Exosomas con GenetikPlux:
-                </h1>
-                <BlurText
-                    text="Formación premium con la última"
-                    delay={300}
-                    animateBy="words"
-                    direction="top"
-                    className="hero_aside-subtitle_first"
-                    client:load
-                />
-                <BlurText
-                    text="tecnología en estética avanzada."
-                    delay={1500}
-                    animateBy="words"
-                    direction="bottom"
-                    className="hero_aside-subtitle_second"
-                    client:load
-                />
-                <SplitText 
-                    text="Certificación Profesional inmediata"
-                    className="hero_aside-text"
-                    delay={250}
-                    duration={1.25}
-                    ease="power3.out"
-                    splitType="chars"
-                    from={{ opacity: 0, y: 40 }}
-                    to={{ opacity: 1, y: 0 }}
-                    threshold={0.1}
-                    rootMargin="-100px"
-                    client:load
-                />
-
-                <div class="pt-20">
-                    <a href="./assets/PROGRAMA-EDUCATIVO.pdf" target="_blank" rel="noopener" class="hero_aside-btn animate__animated animate__pulse">
-                        Programa Educativo
-                    </a>
-                </div>
-            </div>
-        </div>
+			<div class="hero_aside-wrapper">
+				<div class="max-w-4xl">
+					<h1 class="hero_aside-title">{title}</h1>
+					<BlurText
+						text={subtitle_first}
+						delay={300}
+						animateBy="words"
+						direction="top"
+						className="hero_aside-subtitle_first"
+						client:load
+					/>
+					<BlurText
+						text={subtitle_second}
+						delay={1500}
+						animateBy="words"
+						direction="bottom"
+						className="hero_aside-subtitle_second"
+						client:load
+					/>
+					<SplitText 
+						text={text}
+						className="hero_aside-text"
+						delay={250}
+						duration={1.25}
+						ease="power3.out"
+						splitType="chars"
+						from={{ opacity: 0, y: 40 }}
+						to={{ opacity: 1, y: 0 }}
+						threshold={0.1}
+						rootMargin="-100px"
+						client:load
+					/>
+					<div class="pt-20">
+						<a href="./assets/PROGRAMA-EDUCATIVO.pdf" target="_blank" rel="noopener" class="hero_aside-btn animate__animated animate__pulse">
+							{btn}
+						</a>
+					</div>
+				</div>
+			</div>
     </div>
 </section>

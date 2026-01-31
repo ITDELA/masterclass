@@ -31,22 +31,23 @@ const cities = [
     venue: "InterContinental Boston (IHG)",
   },
 ];
+const title = "Elige tu ciudad"
+const cta = "Inscribirme"
+const common = "Masterclass Tour"
 ---
-
 
 <section class="cities">
     <div class="cities_container">
-    <h2 class="cities_title">Elige tu ciudad</h2>
-
+    <h2 class="cities_title">{title}</h2>
     <div class="cities_grid">
         {cities.map((city) => (
         <div class="cities_card">
           <div class="cities_card-date">{city.date}</div>
           <div class="cities_card-month">{city.month}</div>
-          <div class="cities_card-tour">Masterclass Tour</div>
+          <div class="cities_card-tour">{common}</div>
           <div class="cities_card-city">{city.city}:</div>
           <div class="cities_card-venue">{city.venue}</div>
-          <a href="#inscribirme" class="cities_card-btn">Inscribirme</a>
+          <a href="#inscribirme" class="cities_card-btn">{cta}</a>
         </div>
         ))}
     </div>
