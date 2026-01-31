@@ -379,3 +379,42 @@ html {
 .instructor_btn {
   @apply mt-10 inline-block bg-[#060606] px-10 py-4 text-sm font-medium uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-[#bfa792];
 }
+
+/* CTA */
+.cta {
+  @apply bg-[#060606] py-16 md:py-24;
+}
+
+.cta_container {
+  @apply container mx-auto px-6;
+}
+
+.cta_card {
+  @apply mx-auto max-w-3xl rounded-2xl border border-white/20 p-8 md:p-12;
+}
+
+.cta_title {
+  @apply text-center text-3xl font-normal italic text-white md:text-4xl lg:text-5xl;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta_subtitle {
+  @apply mt-4 text-center text-base text-white/70 md:text-lg;
+}
+
+.cta_btnWrap {
+  @apply mt-8 flex justify-center;
+}
+
+.cta_btn {
+  @apply rounded-lg bg-white px-10 py-4 text-sm font-medium uppercase tracking-[0.15em] text-[#060606] transition-all duration-300 hover:bg-[#bfa792] hover:text-white;
+}
+
+.cta_links {
+  @apply mt-10 space-y-3;
+}
+
+.cta_link {
+  @apply block text-2xl font-bold italic text-white transition-colors hover:text-[#bfa792] md:text-3xl;
+  font-family: 'Playfair Display', serif;
+}

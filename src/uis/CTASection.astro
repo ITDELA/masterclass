@@ -1,32 +1,31 @@
 ---
 const cities = ["MIAMI", "ORLANDO", "CHARLOTTE", "NEW YORK", "BOSTON"];
+const title = "Asegura tu cupo"
+const subtitle = "Asegura tu lugar hoy y entra al círculo de pioneros en exosomas."
+const btn = "Reservar con 30%"
 ---
 
-<section class="bg-[#060606] py-16 md:py-24" id="inscribirme">
-    <div class="container mx-auto px-6">
-    <div class="mx-auto max-w-3xl rounded-2xl border border-white/20 p-8 md:p-12">
-        <h2 class="text-center font-playfair text-3xl font-normal italic text-white md:text-4xl lg:text-5xl">
-        Asegura tu cupo
-        </h2>
+<section class="cta" id="inscribirme">
+    <div class="cta_container">
+    <div class="cta_card">
+        <h2 class="cta_title">{title}</h2>
 
-        <p class="mt-4 text-center text-base text-white/70 md:text-lg">
-        Asegura tu lugar hoy y entra al círculo de pioneros en exosomas.
-        </p>
+        <p class="cta_subtitle">{subtitle}</p>
 
-        <div class="mt-8 flex justify-center">
+        <div class="cta_btnWrap">
         <a
             href="#reservar"
-            class="rounded-lg bg-white px-10 py-4 text-sm font-medium uppercase tracking-[0.15em] text-[#060606] transition-all duration-300 hover:bg-[#bfa792] hover:text-white"
+            class="cta_btn"
         >
-            Reservar con 30%
+            {btn}
         </a>
         </div>
 
-        <div class="mt-10 space-y-3">
+        <div class="cta_links">
         {cities.map((city) => (
             <a
             href={`#${city.toLowerCase().replace(" ", "-")}`}
-            class="block font-playfair text-2xl font-bold italic text-white transition-colors hover:text-[#bfa792] md:text-3xl"
+            class="cta_link"
             >
             {city}
             </a>
