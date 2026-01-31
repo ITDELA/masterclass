@@ -1,36 +1,36 @@
 ---
 const cities = ["MIAMI", "ORLANDO", "CHARLOTTE", "NEW YORK", "BOSTON"];
-const title = "Asegura tu cupo"
-const subtitle = "Asegura tu lugar hoy y entra al círculo de pioneros en exosomas."
-const btn = "Reservar con 30%"
+const title = "Asegura tu cupo";
+const subtitle =
+  "Asegura tu lugar hoy y entra al círculo de pioneros en exosomas.";
+const btn = "Reservar con 30%";
 ---
 
 <section class="cta" id="inscribirme">
-    <div class="cta_container">
+  <div class="cta_container">
     <div class="cta_card">
-        <h2 class="cta_title">{title}</h2>
+      <h2 class="cta_title">{title}</h2>
 
-        <p class="cta_subtitle">{subtitle}</p>
+      <p class="cta_subtitle">{subtitle}</p>
 
-        <div class="cta_btnWrap">
-        <a
-            href="#reservar"
-            class="cta_btn"
-        >
-            {btn}
+      <div class="cta_btnWrap">
+        <a href="#reservar" class="cta_btn">
+          {btn}
         </a>
-        </div>
+      </div>
 
-        <div class="cta_links">
-        {cities.map((city) => (
+      <div class="cta_links">
+        {
+          cities.map((city) => (
             <a
-            href={`#${city.toLowerCase().replace(" ", "-")}`}
-            class="cta_link"
+              href={`#${city.toLowerCase().replace(" ", "-")}`}
+              class="cta_link"
             >
-            {city}
+              {city}
             </a>
-        ))}
-        </div>
+          ))
+        }
+      </div>
     </div>
-    </div>
+  </div>
 </section>

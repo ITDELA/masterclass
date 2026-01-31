@@ -13,30 +13,30 @@ const testimonials = [
     poster: "https://ext.same-assets.com/2397237772/1749925750.jpeg",
   },
 ];
-const title = "Testimonios"
+const title = "Testimonios";
 ---
 
 <section class="testimonials">
-    <div class="testimonials_container">
+  <div class="testimonials_container">
     <h2 class="testimonials_title">{title}</h2>
 
     <div class="testimonials_grid">
-        {testimonials.map((testimonial) => (
-        <div
-            class="testimonials_card"
-        >
+      {
+        testimonials.map((testimonial) => (
+          <div class="testimonials_card">
             <video
-            class="testimonials_video"
-            controls
-            playsinline
-            poster={testimonial.poster}
-            preload="metadata"
+              class="testimonials_video"
+              controls
+              playsinline
+              poster={testimonial.poster}
+              preload="metadata"
             >
-            <source src={testimonial.video} type="video/mp4" />
-            Your browser does not support the video tag.
+              <source src={testimonial.video} type="video/mp4" />
+              Your browser does not support the video tag.
             </video>
-        </div>
-        ))}
+          </div>
+        ))
+      }
     </div>
-    </div>
+  </div>
 </section>

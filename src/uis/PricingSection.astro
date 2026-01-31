@@ -1,74 +1,66 @@
 ---
-const title = "Inversión"
-const cta = "Reservar Cupo"
-const card1Title = "Preventa"
-const card1Price = "$750"
-const card1Note = "Reserva con 30%: $225."
-const card2Title = "Dia del Evento"
-const card2Price = "$850"
-const card2Note = "Pago completo."
+const title = "Inversión";
+const cta = "Reservar Cupo";
+const card1Title = "Preventa";
+const card1Price = "$750";
+const card1Note = "Reserva con 30%: $225.";
+const card2Title = "Dia del Evento";
+const card2Price = "$850";
+const card2Note = "Pago completo.";
 ---
 
 <section class="pricing" id="programa">
-    <div class="pricing_container">
+  <div class="pricing_container">
     <h2 class="pricing_title">{title}</h2>
 
     <div class="pricing_grid">
-        <div class="pricing_card">
+      <div class="pricing_card">
         <h3 class="pricing_card-title">{card1Title}</h3>
 
         <div class="pricing_card-price">{card1Price}</div>
 
         <div class="pricing_card-noteRow">
-            <svg
+          <svg
             class="pricing_card-icon"
             viewBox="0 0 20 20"
             fill="currentColor"
-            >
+          >
             <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-            />
-            </svg>
-            <span class="pricing_card-note">{card1Note}</span>
+              fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="pricing_card-note">{card1Note}</span>
         </div>
 
-        <a
-            href="#inscribirme"
-            class="pricing_card-btn"
-        >
-            {cta}
+        <a href="#inscribirme" class="pricing_card-btn">
+          {cta}
         </a>
-        </div>
+      </div>
 
-        <div class="pricing_card">
+      <div class="pricing_card">
         <h3 class="pricing_card-title">{card2Title}</h3>
 
         <div class="pricing_card-price">{card2Price}</div>
 
         <div class="pricing_card-noteRow">
-            <svg
+          <svg
             class="pricing_card-icon"
             viewBox="0 0 20 20"
             fill="currentColor"
-            >
+          >
             <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-            />
-            </svg>
-            <span class="pricing_card-note">{card2Note}</span>
+              fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="pricing_card-note">{card2Note}</span>
         </div>
 
-        <a
-            href="#inscribirme"
-            class="pricing_card-btn"
-        >
-            {cta}
+        <a href="#inscribirme" class="pricing_card-btn">
+          {cta}
         </a>
-        </div>
+      </div>
     </div>
-    </div>
+  </div>
 </section>

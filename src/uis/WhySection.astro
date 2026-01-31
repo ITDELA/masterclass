@@ -6,34 +6,42 @@ const benefits = [
   "Confianza científica: rutas biológicas y seguridad operativa.",
   "Soporte continuo: comunidad, webinars y actualización.",
 ];
-const title = "¿Por qué esta certificación cambia todo?"
-const subtitle = "Rejuvenecimiento basado en evidencia científica"
+const title = "¿Por qué esta certificación cambia todo?";
+const subtitle = "Rejuvenecimiento basado en evidencia científica";
 ---
 
 <section class="why">
-	<div class="why_container">
-		<div class="why_layout">
-			<div class="why_col">
-				<div class="why_heading">
-					<h2 class="why_title">{title}</h2>
-					<p class="why_subtitle">{subtitle}</p>
-				</div>
-				<ul class="why_list">
-				{benefits.map((benefit) => (
-					<li class="why_list-item">
-						<span class="why_list-bullet" />
-						<span class="why_list-text">{benefit}</span>
-					</li>
-				))}
-				</ul>
-			</div>
-			<div class="why_col">
-				<div class="why_video-wrap">
-					<video autoplay="" playsinline="" loop="" poster="" muted="" class="why_video"
-						src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68c5e6d44bce0bd4a657d179.mp4" 
-					/>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="why_container">
+    <div class="why_layout">
+      <div class="why_col">
+        <div class="why_heading">
+          <h2 class="why_title">{title}</h2>
+          <p class="why_subtitle">{subtitle}</p>
+        </div>
+        <ul class="why_list">
+          {
+            benefits.map((benefit) => (
+              <li class="why_list-item">
+                <span class="why_list-bullet" />
+                <span class="why_list-text">{benefit}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="why_col">
+        <div class="why_video-wrap">
+          <video
+            autoplay=""
+            playsinline=""
+            loop=""
+            poster=""
+            muted=""
+            class="why_video"
+            src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68c5e6d44bce0bd4a657d179.mp4"
+          ></video>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

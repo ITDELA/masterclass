@@ -1,56 +1,89 @@
 ---
 import { SplitText, BlurText } from "../components";
-import 'animate.css';
+import "animate.css";
 
-const lang = Astro.url.searchParams.get('lang') === 'en' ? 'en' : 'es'
-const nextLang = lang === 'es' ? 'en' : 'es'
+const lang = Astro.url.searchParams.get("lang") === "en" ? "en" : "es";
+const nextLang = lang === "es" ? "en" : "es";
 
-const title = lang === 'en'
-	? "This Valentine’s Day, the most important love starts with you"
-	: "Este San Valentín, el amor más importante empieza contigo"
-const subtitle_first = lang === 'en'
-	? "Premium training with the latest"
-	: "Formación premium con la última"
-const subtitle_second = lang === 'en'
-	? "technology in advanced aesthetics."
-	: "tecnología en estética avanzada."
-const text = lang === 'en'
-	? "Instant Professional Certification"
-	: "Certificación Profesional inmediata"
-const btn = lang === 'en' ? "Educational Program" : "Programa Educativo"
-const alt_logo = "GenetikPlux Logo"
+const title =
+  lang === "en"
+    ? "This Valentine’s Day, the most important love starts with you"
+    : "Este San Valentín, el amor más importante empieza contigo";
+const subtitle_first =
+  lang === "en"
+    ? "Premium training with the latest"
+    : "Formación premium con la última";
+const subtitle_second =
+  lang === "en"
+    ? "technology in advanced aesthetics."
+    : "tecnología en estética avanzada.";
+const text =
+  lang === "en"
+    ? "Instant Professional Certification"
+    : "Certificación Profesional inmediata";
+const btn = lang === "en" ? "Educational Program" : "Programa Educativo";
+const alt_logo = "GenetikPlux Logo";
 ---
 
 <section class="hero">
-	<div class="hero_lang">
-		<a href={`?lang=${nextLang}`} class="hero_lang-btn" aria-label={`Switch language to ${nextLang.toUpperCase()}`}>
-			<svg class="hero_lang-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-				<path d="M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-				<path d="M12 2c2.5 2.7 4 6.2 4 10s-1.5 7.3-4 10c-2.5-2.7-4-6.2-4-10s1.5-7.3 4-10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-			</svg>
-			{nextLang.toUpperCase()}
-		</a>
-	</div>
-    <div class="hero_bg">
-			<div class="hero_bg-banner">
-				<video autoplay="" playsinline="" loop="" poster="" muted="" class="hero_bg-video"
-					src="./assets/woman.mp4" 
-				/>
-			</div>
+  <div class="hero_lang">
+    <a
+      href={`?lang=${nextLang}`}
+      class="hero_lang-btn"
+      aria-label={`Switch language to ${nextLang.toUpperCase()}`}
+    >
+      <svg
+        class="hero_lang-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M2 12h20"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M12 2c2.5 2.7 4 6.2 4 10s-1.5 7.3-4 10c-2.5-2.7-4-6.2-4-10s1.5-7.3 4-10Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+      {nextLang.toUpperCase()}
+    </a>
+  </div>
+  <div class="hero_bg">
+    <div class="hero_bg-banner">
+      <video
+        autoplay=""
+        playsinline=""
+        loop=""
+        poster=""
+        muted=""
+        class="hero_bg-video"
+        src="./assets/woman.mp4"></video>
     </div>
-    <div class="hero_bg-logo">
-			<img
-				alt={alt_logo}
-				class="hero_bg-logo_img"
-				src="https://ext.same-assets.com/2397237772/2291279987.png"
-			/>
+  </div>
+  <div class="hero_bg-logo">
+    <img
+      alt={alt_logo}
+      class="hero_bg-logo_img"
+      src="https://ext.same-assets.com/2397237772/2291279987.png"
+    />
+  </div>
+  <div class="hero_aside">
+    <div class="hero_aside-wrapper">
+      <div class="max-w-4xl">
+        <h1 class="hero_aside-title text-white">{title}</h1>
+      </div>
     </div>
-    <div class="hero_aside">
-			<div class="hero_aside-wrapper">
-				<div class="max-w-4xl">
-					<h1 class="hero_aside-title text-white">{title}</h1>
-				</div>
-			</div>
-    </div>
+  </div>
 </section>

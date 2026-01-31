@@ -1,2 +1,2 @@
-export * from "./SplitText"
-export * from "./BlurText"
+export * from "./SplitText";
+export * from "./BlurText";

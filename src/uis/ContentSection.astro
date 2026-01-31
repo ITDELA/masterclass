@@ -6,35 +6,34 @@ const contents = [
   },
   {
     title: "Boston",
-    description: "Exosomas + PDRN + (rutas complementarias: vesicular, nuclear y mitocondrial).",
+    description:
+      "Exosomas + PDRN + (rutas complementarias: vesicular, nuclear y mitocondrial).",
   },
   {
     title: "New York",
     description: "Selección de pH, capas y tiempos de aplicación.",
   },
 ];
-const title = "Disponible solo hasta el 14 de febrero"
-const subtitle = "Envíos a nivel nacional o visitanos en"
+const title = "Disponible solo hasta el 14 de febrero";
+const subtitle = "Envíos a nivel nacional o visitanos en";
 ---
 
 <section class="content">
-    <div class="content_container">
+  <div class="content_container">
     <div class="content_header">
-        <h2 class="content_title">{title}</h2>
-        <p class="content_subtitle">{subtitle}</p>
+      <h2 class="content_title">{title}</h2>
+      <p class="content_subtitle">{subtitle}</p>
     </div>
 
     <div class="content_grid">
-        {contents.map((content, index) => (
-        <div class="content_item">
-            <h3 class="content_item-title">
-            {content.title}
-            </h3>
-            <p class="content_item-text">
-            {content.description}
-            </p>
-        </div>
-        ))}
+      {
+        contents.map((content, index) => (
+          <div class="content_item">
+            <h3 class="content_item-title">{content.title}</h3>
+            <p class="content_item-text">{content.description}</p>
+          </div>
+        ))
+      }
     </div>
-    </div>
+  </div>
 </section>

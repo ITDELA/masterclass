@@ -1,48 +1,50 @@
 ---
-import { Image } from 'astro:assets';
-import corazones from '../assets/corazones.jpeg';
+import { Image } from "astro:assets";
+import corazones from "../assets/corazones.jpeg";
 
 const includes = [
-"Cuidarte no es vanidad, es necesidad Tu piel es el órgano más grande de tu cuerpo. Merece atención profesional.",
-"Calidad profesional al alcance de tu mano Productos de grado clínico usados por médicos estéticos en toda Florida.",
-"Resultados reales, no promesas vacías Tecnología MCCM respaldada por profesionales de la medicina estética.",
-"Compromiso con tu transformación No solo vendemos productos, acompañamos tu viaje hacia tu mejor versión."
+  "Cuidarte no es vanidad, es necesidad Tu piel es el órgano más grande de tu cuerpo. Merece atención profesional.",
+  "Calidad profesional al alcance de tu mano Productos de grado clínico usados por médicos estéticos en toda Florida.",
+  "Resultados reales, no promesas vacías Tecnología MCCM respaldada por profesionales de la medicina estética.",
+  "Compromiso con tu transformación No solo vendemos productos, acompañamos tu viaje hacia tu mejor versión.",
 ];
-const title = "POR QUÉ ELEGIR GENETIKPLUX"
-const btn = "Programa Educativo"
+const title = "POR QUÉ ELEGIR GENETIKPLUX";
+const btn = "Programa Educativo";
 ---
 
 <section class="instructor">
-    <div class="instructor_container">
+  <div class="instructor_container">
     <div class="instructor_grid">
-        <div class="instructor_media">
+      <div class="instructor_media">
         <Image
-            src={corazones}
-            alt="Práctica de Masterclass"
-            class="instructor_image"
+          src={corazones}
+          alt="Práctica de Masterclass"
+          class="instructor_image"
         />
-        </div>
+      </div>
 
-        <div>
+      <div>
         <h2 class="instructor_title">{title}</h2>
 
         <ul class="instructor_list">
-            {includes.map((item) => (
-            <li class="instructor_item">
+          {
+            includes.map((item) => (
+              <li class="instructor_item">
                 <svg
-                class="instructor_icon"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+                  class="instructor_icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
                 >
-                <path
+                  <path
                     fill-rule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd"
-                />
+                  />
                 </svg>
                 <span class="instructor_text">{item}</span>
-            </li>
-            ))}
+              </li>
+            ))
+          }
         </ul>
 
         <!--
@@ -53,7 +55,7 @@ const btn = "Programa Educativo"
             {btn}
         </a>
         -->
-        </div>
+      </div>
     </div>
-    </div>
+  </div>
 </section>

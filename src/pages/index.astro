@@ -1,72 +1,72 @@
 ---
 import Layout from "../layout/main.astro";
 
-import HeroSection  from "../uis/HeroSection.astro";
+import HeroSection from "../uis/HeroSection.astro";
 import CitiesSection from "../uis/CitiesSection.astro";
 import IncludesSection from "../uis/IncludesSection.astro";
 import ContentSection from "../uis/ContentSection.astro";
 import InstructorSection from "../uis/InstructorSection.astro";
 import Footer from "../uis/Footer.astro";
 
-import arrugas from "../assets/arrugas.png"
-import cansados from "../assets/cansados.png"
-import manchas from "../assets/manchas.png"
+import arrugas from "../assets/arrugas.png";
+import cansados from "../assets/cansados.png";
+import manchas from "../assets/manchas.png";
 
 const arruga = {
-	includes: [
-		"Reducción visible de líneas de expresión",
-		"Piel más firme y elástica",
-		"Hidratación profunda con ácido hialurónico",
-		"Regeneración celular activa",
-		"Textura suave como la seda",
-		"Luminosidad natural restaurada"
-	],
-	title: "Juventud Atemporal",
-	btn : "Cero Arrugas",
-	img: arrugas,
-	alt: "Cero arrugas"
-}
+  includes: [
+    "Reducción visible de líneas de expresión",
+    "Piel más firme y elástica",
+    "Hidratación profunda con ácido hialurónico",
+    "Regeneración celular activa",
+    "Textura suave como la seda",
+    "Luminosidad natural restaurada",
+  ],
+  title: "Juventud Atemporal",
+  btn: "Cero Arrugas",
+  img: arrugas,
+  alt: "Cero arrugas",
+};
 
 const cansado = {
-	includes: [
-	"Reduce ojeras y bolsas visiblemente",
-	"Hidratación intensiva 24 horas",
-	"Regeneración celular del contorno",
-	"Mirada más despierta y radiante",
-	"Textura suave y líneas difuminadas"
-	],
-	title: "Mirada Renovada",
-	btn : "Cero Ojos Cansados",
-	img: cansados,
-	alt: "Cero Ojos Cansados"
-}
+  includes: [
+    "Reduce ojeras y bolsas visiblemente",
+    "Hidratación intensiva 24 horas",
+    "Regeneración celular del contorno",
+    "Mirada más despierta y radiante",
+    "Textura suave y líneas difuminadas",
+  ],
+  title: "Mirada Renovada",
+  btn: "Cero Ojos Cansados",
+  img: cansados,
+  alt: "Cero Ojos Cansados",
+};
 
 const mancha = {
-	includes: [
-	"Reducción visible de manchas y hiperpigmentación",
-	"Tono de piel unificado y luminoso",
-	"Acción despigmentante profesional",
-	"Prevención de nuevas manchas",
-	"Hidratación balanceada",
-	"Piel radiante desde la primera semana"
-	],
-	title: "Luminosidad Perfecta",
-	btn : "Cero Manchas",
-	img: manchas,
-	alt: "Cero Manchas"
-}
-const title = "Masterclass GenetikPlux"
+  includes: [
+    "Reducción visible de manchas y hiperpigmentación",
+    "Tono de piel unificado y luminoso",
+    "Acción despigmentante profesional",
+    "Prevención de nuevas manchas",
+    "Hidratación balanceada",
+    "Piel radiante desde la primera semana",
+  ],
+  title: "Luminosidad Perfecta",
+  btn: "Cero Manchas",
+  img: manchas,
+  alt: "Cero Manchas",
+};
+const title = "Masterclass GenetikPlux";
 ---
 
 <Layout lang="en" title={title}>
-	<HeroSection />
-	<CitiesSection />
-	<IncludesSection isDark include={arruga} />
-	<IncludesSection include={cansado} />
-	<IncludesSection isDark include={mancha} />
-	<InstructorSection />
-	<ContentSection />
-	<Footer />
+  <HeroSection />
+  <CitiesSection />
+  <IncludesSection isDark include={arruga} />
+  <IncludesSection include={cansado} />
+  <IncludesSection isDark include={mancha} />
+  <InstructorSection />
+  <ContentSection />
+  <Footer />
 </Layout>
 
 <!--
