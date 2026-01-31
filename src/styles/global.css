@@ -25,20 +25,10 @@ html {
   font-family: "Space Grotesk", sans-serif;
 }
 
-
 .hero_text {
   font-family: "Grotesk", sans-serif;
   font-weight: 300;
   font-style: normal;
-}
-
-
-.font-playfair {
-  font-family: 'Playfair Display', serif;
-}
-
-.font-quattrocento {
-  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -108,3 +98,49 @@ html {
   @apply mt-10 px-10 py-4 font-medium uppercase inline-block shadow-lg tracking-[0.2em] text-[#060606] bg-white hover:bg-[#060606] hover:text-white transition-all duration-300; 
 }
 
+/* Cities */
+.cities {
+  @apply bg-white py-16 md:py-24;
+}
+
+.cities_container {
+  @apply container mx-auto px-6;
+}
+
+.cities_title {
+  @apply mb-12 text-center text-4xl font-normal text-[#060606] md:text-5xl;
+  font-family: 'Playfair Display', serif;
+}
+
+.cities_grid {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5;
+}
+
+.cities_card {
+  @apply flex w-3xs flex-col rounded-md bg-[#060606] p-6 text-center transition-all duration-300 hover:scale-105;
+}
+
+.cities_card-date {
+  @apply mb-2 text-4xl font-bold text-white md:text-5xl;
+  font-family: 'Playfair Display', serif;
+}
+
+.cities_card-month {
+  @apply mb-4 text-xl font-medium uppercase text-white;
+}
+
+.cities_card-tour {
+  @apply mb-1 text-base italic text-white;
+}
+
+.cities_card-city {
+  @apply mb-2 text-base font-bold italic text-white;
+}
+
+.cities_card-venue {
+  @apply mb-6 text-base text-white/80;
+}
+
+.cities_card-btn {
+  @apply mt-auto rounded-lg bg-white px-6 py-3 text-xl font-medium text-[#060606] transition-all duration-300 hover:bg-[#bfa792] hover:text-white;
+}
