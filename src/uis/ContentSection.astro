@@ -13,26 +13,28 @@ const contents = [
     description: "Selección de pH, capas y tiempos de aplicación.",
   },
 ];
+const title = "Contenido exclusivo"
+const subtitle = "Un evento basado en evidencia científica con enfoque práctico"
 ---
 
-<section class="bg-[#060606] py-16 md:py-20">
-    <div class="container mx-auto px-6">
-    <div class="text-center">
-        <h2 class="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
-        Contenido exclusivo
+<section class="content">
+    <div class="content_container">
+    <div class="content_header">
+        <h2 class="content_title">
+        {title}
         </h2>
-        <p class="mt-4 text-xl text-white/70 md:text-2xl">
-        Un evento basado en evidencia científica con enfoque práctico
+        <p class="content_subtitle">
+        {subtitle}
         </p>
     </div>
 
-    <div class="mt-12 grid gap-8 md:grid-cols-3">
+    <div class="content_grid">
         {contents.map((content, index) => (
-        <div key={index} class="text-center w-3xs">
-            <h3 class="font-playfair text-xl font-semibold italic text-white md:text-2xl">
+        <div class="content_item">
+            <h3 class="content_item-title">
             {content.title}
             </h3>
-            <p class="mt-3 text-sm text-white/70 md:text-base">
+            <p class="content_item-text">
             {content.description}
             </p>
         </div>

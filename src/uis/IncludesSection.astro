@@ -8,31 +8,27 @@ const includes = [
   "Acceso a webinars semanales sin costo",
   "Descuentos exclusivos en insumos y actualizaciones",
 ];
+const title = "¿Qué incluye tu Masterclass?"
+const btn = "Programa Educativo"
 ---
 
-<section class="bg-white py-16 md:py-24">
-    <div class="container mx-auto px-6">
-    <div class="grid items-center gap-12 lg:grid-cols-2">
-        {/* Image */}
-        <div class="relative overflow-hidden rounded-lg shadow-lg">
-            <video autoplay="" playsinline="" loop="" poster="" muted="" class="h-[320px] w-full object-cover md:h-[420px]" style="opacity:1;border-radius:-2px;" 
+<section class="includes">
+    <div class="includes_container">
+    <div class="includes_grid">
+        <div class="includes_media">
+            <video autoplay="" playsinline="" loop="" poster="" muted="" class="includes_video" style="opacity:1;border-radius:-2px;" 
                 src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68c9f96a9fe3cfa7683b131a.mp4" 
             />
         </div>
 
-        {/* Content */}
         <div>
-        <h2 class="font-playfair text-3xl font-normal text-[#060606] md:text-4xl lg:text-5xl">
-            ¿Qué incluye tu
-            <br />
-            Masterclass?
-        </h2>
+        <h2 class="includes_title">{title}</h2>
 
-        <ul class="mt-8 space-y-4">
+        <ul class="includes_list">
             {includes.map(item => (
-            <li class="flex items-start gap-3">
+            <li class="includes_item">
                 <svg
-                class="mt-1 h-5 w-5 flex-shrink-0"
+                class="includes_icon"
                 viewBox="0 0 20 20"
                 >
                     <circle r="10" cx="10" cy="10" fill="black" />
@@ -43,16 +39,16 @@ const includes = [
                         fill="white"
                     />
                 </svg>
-                <span class="text-base text-[#060606] md:text-lg">{item}</span>
+                <span class="includes_text">{item}</span>
             </li>
             ))}
         </ul>
 
         <a
             href="#programa"
-            class="mt-10 inline-block bg-[#060606] px-10 py-4 text-sm font-medium uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-[#bfa792] rounded-sm"
+            class="includes_btn"
         >
-            Programa Educativo
+            {btn}
         </a>
         </div>
     </div>
