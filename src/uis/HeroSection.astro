@@ -2,7 +2,7 @@
 import { SplitText, BlurText } from "../components";
 import 'animate.css';
 
-const title = "Conviértete en experto en Exosomas con GenetikPlux:"
+const title = "Este San Valentín, el amor más importante empieza contigo"
 const subtitle_first = "Formación premium con la última"
 const subtitle_second = "tecnología en estética avanzada."
 const text = "Certificación Profesional inmediata"
@@ -14,7 +14,7 @@ const alt_logo = "GenetikPlux Logo"
     <div class="hero_bg">
 			<div class="hero_bg-banner">
 				<video autoplay="" playsinline="" loop="" poster="" muted="" class="hero_bg-video"
-					src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68cb3ab48c44371097df542e.mp4" 
+					src="./assets/woman.mp4" 
 				/>
 			</div>
     </div>
@@ -28,41 +28,7 @@ const alt_logo = "GenetikPlux Logo"
     <div class="hero_aside">
 			<div class="hero_aside-wrapper">
 				<div class="max-w-4xl">
-					<h1 class="hero_aside-title">{title}</h1>
-					<BlurText
-						text={subtitle_first}
-						delay={300}
-						animateBy="words"
-						direction="top"
-						className="hero_aside-subtitle_first"
-						client:load
-					/>
-					<BlurText
-						text={subtitle_second}
-						delay={1500}
-						animateBy="words"
-						direction="bottom"
-						className="hero_aside-subtitle_second"
-						client:load
-					/>
-					<SplitText 
-						text={text}
-						className="hero_aside-text"
-						delay={250}
-						duration={1.25}
-						ease="power3.out"
-						splitType="chars"
-						from={{ opacity: 0, y: 40 }}
-						to={{ opacity: 1, y: 0 }}
-						threshold={0.1}
-						rootMargin="-100px"
-						client:load
-					/>
-					<div class="pt-20">
-						<a href="./assets/PROGRAMA-EDUCATIVO.pdf" target="_blank" rel="noopener" class="hero_aside-btn animate__animated animate__pulse">
-							{btn}
-						</a>
-					</div>
+					<h1 class="hero_aside-title text-white">{title}</h1>
 				</div>
 			</div>
     </div>

@@ -1,4 +1,7 @@
 ---
+import { SplitText, BlurText } from "../components";
+import 'animate.css';
+/*
 const cities = [
   {
     date: "03",
@@ -31,25 +34,72 @@ const cities = [
     venue: "InterContinental Boston (IHG)",
   },
 ];
+
 const title = "Elige tu ciudad"
 const cta = "Inscribirme"
 const common = "Masterclass Tour"
+*/
+const title = "Conviértete en experto en Exosomas con GenetikPlux:"
+const subtitle_first = "Formación premium con la última"
+const subtitle_second = "tecnología en estética avanzada."
+const text = "Certificación Profesional inmediata"
+const btn = "REGALAR TAMBIÉN ES AMOR"
+const alt_logo = "GenetikPlux Logo"
 ---
 
 <section class="cities">
     <div class="cities_container">
-    <h2 class="cities_title">{title}</h2>
-    <div class="cities_grid">
-        {cities.map((city) => (
-        <div class="cities_card">
-          <div class="cities_card-date">{city.date}</div>
-          <div class="cities_card-month">{city.month}</div>
-          <div class="cities_card-tour">{common}</div>
-          <div class="cities_card-city">{city.city}:</div>
-          <div class="cities_card-venue">{city.venue}</div>
-          <a href="#inscribirme" class="cities_card-btn">{cta}</a>
+     				<div class="max-w-4xl">
+					<h1 class="hero_aside-title text-[#c8102e]">{title}</h1>
+					<BlurText
+						text={subtitle_first}
+						delay={300}
+						animateBy="words"
+						direction="top"
+						className="hero_aside-subtitle_first text-[#c8102e]"
+						client:load
+					/>
+					<BlurText
+						text={subtitle_second}
+						delay={1500}
+						animateBy="words"
+						direction="bottom"
+						className="hero_aside-subtitle_second text-[#c8102e]"
+						client:load
+					/>
+					<SplitText 
+						text={text}
+						className="hero_aside-text text-[#c8102e]"
+						delay={250}
+						duration={1.25}
+						ease="power3.out"
+						splitType="chars"
+						from={{ opacity: 0, y: 40 }}
+						to={{ opacity: 1, y: 0 }}
+						threshold={0.1}
+						rootMargin="-100px"
+						client:load
+					/>
+					<div class="pt-20">
+						<a href="./assets/PROGRAMA-EDUCATIVO.pdf" target="_blank" rel="noopener" class="hero_aside-btn animate__animated animate__pulse">
+							{btn}
+						</a>
+					</div>
+				</div>
+      <!--
+        <h2 class="cities_title">{title}</h2>
+        <div class="cities_grid">
+            {cities.map((city) => (
+            <div class="cities_card">
+              <div class="cities_card-date">{city.date}</div>
+              <div class="cities_card-month">{city.month}</div>
+              <div class="cities_card-tour">{common}</div>
+              <div class="cities_card-city">{city.city}:</div>
+              <div class="cities_card-venue">{city.venue}</div>
+              <a href="#inscribirme" class="cities_card-btn">{cta}</a>
+            </div>
+            ))}
         </div>
-        ))}
-    </div>
+      -->
     </div>
 </section>

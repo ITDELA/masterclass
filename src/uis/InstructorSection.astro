@@ -1,17 +1,14 @@
 ---
 import { Image } from 'astro:assets';
-import anderson from '../images/anderson.jpeg';
+import corazones from '../assets/corazones.jpeg';
 
 const includes = [
-  "Certificación profesional (impresa y digital)",
-  "Guía de estudio + 25 protocolos paso a paso",
-  "Práctica en vivo con kit + 1 caja de exosomas",
-  "Desayuno y almuerzo incluidos",
-  "Asesoría continua (grupo de soporte)",
-  "Acceso a webinars semanales sin costo",
-  "Descuentos exclusivos en insumos y actualizaciones",
+"Cuidarte no es vanidad, es necesidad Tu piel es el órgano más grande de tu cuerpo. Merece atención profesional.",
+"Calidad profesional al alcance de tu mano Productos de grado clínico usados por médicos estéticos en toda Florida.",
+"Resultados reales, no promesas vacías Tecnología MCCM respaldada por profesionales de la medicina estética.",
+"Compromiso con tu transformación No solo vendemos productos, acompañamos tu viaje hacia tu mejor versión."
 ];
-const title = "¿Qué incluye tu Masterclass?"
+const title = "POR QUÉ ELEGIR GENETIKPLUX"
 const btn = "Programa Educativo"
 ---
 
@@ -20,7 +17,7 @@ const btn = "Programa Educativo"
     <div class="instructor_grid">
         <div class="instructor_media">
         <Image
-            src={anderson}
+            src={corazones}
             alt="Práctica de Masterclass"
             class="instructor_image"
         />
@@ -48,12 +45,14 @@ const btn = "Programa Educativo"
             ))}
         </ul>
 
-        <a
+        <!--
+            <a
             href="#programa"
             class="instructor_btn"
-        >
+            >
             {btn}
         </a>
+        -->
         </div>
     </div>
     </div>

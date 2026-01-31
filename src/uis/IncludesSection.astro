@@ -1,56 +1,24 @@
 ---
-const includes = [
-  "Certificación profesional (impresa y digital)",
-  "Guía de estudio + 25 protocolos paso a paso",
-  "Práctica en vivo con kit + 1 caja de exosomas",
-  "Desayuno y almuerzo incluidos",
-  "Asesoría continua (grupo de soporte)",
-  "Acceso a webinars semanales sin costo",
-  "Descuentos exclusivos en insumos y actualizaciones",
-];
-const title = "¿Qué incluye tu Masterclass?"
-const btn = "Programa Educativo"
+import {clsx} from "clsx"
+
+import Img from "./components/Img.astro"
+import List from "./components/List.astro"
+
+const { isDark, include  } = Astro.props;
+const { title, btn, includes, img, alt} = include
 ---
 
-<section class="includes">
-    <div class="includes_container">
-    <div class="includes_grid">
-        <div class="includes_media">
-            <video autoplay="" playsinline="" loop="" poster="" muted="" class="includes_video" style="opacity:1;border-radius:-2px;" 
-                src="https://storage.googleapis.com/msgsndr/j3f9dSoiNfjln4DzMW95/media/68c9f96a9fe3cfa7683b131a.mp4" 
-            />
-        </div>
-
-        <div>
-        <h2 class="includes_title">{title}</h2>
-
-        <ul class="includes_list">
-            {includes.map(item => (
-            <li class="includes_item">
-                <svg
-                class="includes_icon"
-                viewBox="0 0 20 20"
-                >
-                    <circle r="10" cx="10" cy="10" fill="black" />
-                    <path
-                        fill-rule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                        fill="white"
-                    />
-                </svg>
-                <span class="includes_text">{item}</span>
-            </li>
-            ))}
-        </ul>
-
-        <a
-            href="#programa"
-            class="includes_btn"
-        >
-            {btn}
-        </a>
-        </div>
-    </div>
-    </div>
+<section class={clsx("includes", isDark && "includes_dark")}>
+	<div class="includes_container">
+		<div class="includes_grid">
+			{isDark && (
+				<List includes={includes} isDark={isDark} title={title} btn={btn} />
+				<Img img={img} alt={alt} />
+			)}
+			{!isDark && (
+				<Img img={img} alt={alt} />
+				<List includes={includes} isDark={isDark} title={title} btn={btn} />
+			)}
+		</div>
+	</div>
 </section>
