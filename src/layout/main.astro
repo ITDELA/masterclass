@@ -1,5 +1,8 @@
 ---
+import Footer from "../uis/Footer.astro";
+
 import "../styles/global.css";
+
 const { lang, title } = Astro.props;
 ---
 
@@ -24,6 +27,7 @@ const { lang, title } = Astro.props;
   <body>
     <main class="min-h-screen">
       <slot />
+      <Footer lang="en" />
     </main>
   </body>
 </html>

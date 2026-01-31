@@ -1,42 +1,12 @@
-import type { FC } from "react";
+import type { BlurTextProps } from "../types";
 import type { Transition } from "motion/react";
 
 import { motion } from "motion/react";
 import { useEffect, useRef, useState, useMemo } from "react";
 
-type BlurTextProps = {
-  text?: string;
-  delay?: number;
-  retard?: number;
-  className?: string;
-  animateBy?: "words" | "letters";
-  direction?: "top" | "bottom";
-  threshold?: number;
-  rootMargin?: string;
-  animationFrom?: Record<string, string | number>;
-  animationTo?: Array<Record<string, string | number>>;
-  easing?: (t: number) => number;
-  onAnimationComplete?: () => void;
-  stepDuration?: number;
-};
+import { buildKeyframes } from "../utils";
 
-const buildKeyframes = (
-  from: Record<string, string | number>,
-  steps: Array<Record<string, string | number>>,
-): Record<string, Array<string | number>> => {
-  const keys = new Set<string>([
-    ...Object.keys(from),
-    ...steps.flatMap((s) => Object.keys(s)),
-  ]);
-
-  const keyframes: Record<string, Array<string | number>> = {};
-  keys.forEach((k) => {
-    keyframes[k] = [from[k], ...steps.map((s) => s[k])];
-  });
-  return keyframes;
-};
-
-const BlurText: FC<BlurTextProps> = ({
+const BlurText: BlurTextProps = ({
   text = "",
   delay = 200,
   retard = 200,
