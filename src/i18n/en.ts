@@ -6,52 +6,69 @@ import brightness from "../assets/brightness.png";
 
 const en: Dictionary = {
   lang: "en",
-  title: "Love starts with you.",
+  title: "Love starts with you",
   hero: {
+    href: "/es",
     alt: "GenetikPlux Logo",
     title: "This Valentine’s Day, the most important love starts with you",
   },
+  welcome: {
+    title: "Become an Exosome Expert with GenetikPlux:",
+    subtitle_first: "Premium training with the latest",
+    subtitle_second: "technology in advanced aesthetics.",
+    text: "Immediate Professional Certification",
+    btn: "GIVING IS ALSO LOVE"
+  },
   timeless: {
-    includes: [
-      "Reducción visible de líneas de expresión",
-      "Piel más firme y elástica",
-      "Hidratación profunda con ácido hialurónico",
-      "Regeneración celular activa",
-      "Textura suave como la seda",
-      "Luminosidad natural restaurada",
-    ],
-    title: "Juventud Atemporal",
-    btn: "Cero Arrugas",
     img: youth,
-    alt: "Cero arrugas",
+    title: "Timeless Youth",
+    btn: "Zero Wrinkles",
+    alt: "Zero Wrinkles",
+    includes: [
+      "Visible reduction of fine lines",
+      "Firmer, more elastic skin",
+      "Deep hydration with hyaluronic acid",
+      "Active cell regeneration",
+      "Silky-smooth texture",
+      "Restored natural radiance"
+    ]
   },
   renewed: {
-    includes: [
-      "Reduce ojeras y bolsas visiblemente",
-      "Hidratación intensiva 24 horas",
-      "Regeneración celular del contorno",
-      "Mirada más despierta y radiante",
-      "Textura suave y líneas difuminadas",
-    ],
-    title: "Mirada Renovada",
-    btn: "Cero Ojos Cansados",
     img: look,
-    alt: "Cero Ojos Cansados",
+    title: "A Renewed Perspective",
+    btn: "Zero Tired Eyes",
+    alt: "Zero Tired Eyes",
+    includes: [
+      "Visibly reduces dark circles and puffiness",
+      "24-hour intensive hydration",
+      "Cellular regeneration of the eye contour",
+      "A more awake and radiant look",
+      "Smooth texture and blurred lines"
+    ]
   },
   perfect: {
-    includes: [
-      "Reducción visible de manchas y hiperpigmentación",
-      "Tono de piel unificado y luminoso",
-      "Acción despigmentante profesional",
-      "Prevención de nuevas manchas",
-      "Hidratación balanceada",
-      "Piel radiante desde la primera semana",
-    ],
-    title: "Luminosidad Perfecta",
-    btn: "Cero Manchas",
     img: brightness,
-    alt: "Cero Manchas",
+    btn: "Zero Stains",
+    alt: "Zero Stains",
+    title: "Perfect Luminosity",
+    includes: [
+      "Visible reduction of dark spots and hyperpigmentation",
+      "Even and radiant skin tone",
+      "Professional depigmenting action",
+      "Prevention of new dark spots",
+      "Balanced hydration",
+      "Radiant skin from the first week"
+    ]
   },
+  instructor: {
+    title: "WHY CHOOSE GENETIK PLUX",
+    instructors: [
+      "Taking care of yourself isn't vanity, it's a necessity. Your skin is the largest organ in your body. It deserves professional attention.",
+      "Professional quality at your fingertips. Clinical-grade products used by aesthetic physicians throughout Florida.",
+      "Real results, not empty promises. MCCM technology backed by aesthetic medicine professionals.",
+      "Commitment to your transformation. We don't just sell products; we accompany you on your journey to becoming your best self."
+    ]
+  }
 };
 
 export { en };

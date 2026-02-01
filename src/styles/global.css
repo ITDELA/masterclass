@@ -99,7 +99,7 @@ html {
 }
 
 .hero_aside-btn {
-  @apply mt-10 inline-block bg-white px-10 py-4 font-medium tracking-[0.2em] text-[#060606] uppercase shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white;
+  @apply mt-10 inline-block bg-[#060606] px-10 py-4 font-medium tracking-[0.2em] text-white uppercase shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white;
 }
 
 .hero_lang {

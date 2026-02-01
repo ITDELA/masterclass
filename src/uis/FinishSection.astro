@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import health from "../assets/health.jpeg";
+import woman from "../assets/woman.jpeg";
 
 const { instructor } = Astro.props;
 const { instructors, title } = instructor
@@ -9,13 +9,6 @@ const { instructors, title } = instructor
 <section class="instructor">
   <div class="instructor_container">
     <div class="instructor_grid">
-      <div class="instructor_media">
-        <Image
-          src={health}
-          alt="Práctica de Masterclass"
-          class="instructor_image"
-        />
-      </div>
       <div>
         <h2 class="instructor_title">{title}</h2>
         <ul class="instructor_list">
@@ -38,6 +31,13 @@ const { instructors, title } = instructor
             ))
           }
         </ul>
+      </div>
+      <div class="instructor_media">
+        <Image
+          src={woman}
+          alt="Práctica de Masterclass"
+          class="instructor_image"
+        />
       </div>
     </div>
   </div>

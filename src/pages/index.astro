@@ -2,24 +2,26 @@
 import Layout from "../layout/main.astro";
 
 import HeroSection from "../uis/HeroSection.astro";
-import CitiesSection from "../uis/CitiesSection.astro";
+import WelcomeSection from "../uis/WelcomeSection.astro";
 import IncludesSection from "../uis/IncludesSection.astro";
 import ContentSection from "../uis/ContentSection.astro";
 import InstructorSection from "../uis/InstructorSection.astro";
+import FinishSection from "../uis/FinishSection.astro"
 
 import { en } from "../i18n";
 
-const { title, lang, timeless, renewed, perfect } = en;
+const { title, lang, hero, welcome, timeless, renewed, perfect, instructor } = en;
 ---
 
 <Layout lang={lang} title={title}>
-  <HeroSection lang={lang} />
-  <CitiesSection lang={lang} />
-  <IncludesSection lang={lang} include={timeless} isDark />
-  <IncludesSection lang={lang} include={renewed} />
-  <IncludesSection lang={lang} include={perfect} isDark />
-  <InstructorSection lang={lang} />
-  <ContentSection lang={lang} />
+  <HeroSection hero={hero} />
+  <WelcomeSection welcome={welcome} />
+  <IncludesSection include={timeless} isDark />
+  <IncludesSection include={renewed} />
+  <IncludesSection include={perfect} isDark />
+  <InstructorSection instructor={instructor} />
+  <ContentSection />
+  <FinishSection instructor={instructor} />
 </Layout>
 
 <!--

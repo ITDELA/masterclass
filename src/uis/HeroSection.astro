@@ -2,21 +2,17 @@
 import { SplitText, BlurText } from "../components";
 import "animate.css";
 
-const lang = Astro.url.searchParams.get("lang") === "en" ? "en" : "es";
+
+const { lang, hero } = Astro.props;
+const {title, alt, href } = hero
 const nextLang = lang === "es" ? "en" : "es";
 
-const title =
-  lang === "en"
-    ? "This Valentine’s Day, the most important love starts with you"
-    : "Este San Valentín, el amor más importante empieza contigo";
-
-const alt = "GenetikPlux Logo";
 ---
 
 <section class="hero">
   <div class="hero_lang">
     <a
-      href={`?lang=${nextLang}`}
+      href={href}
       class="hero_lang-btn"
       aria-label={`Switch language to ${nextLang.toUpperCase()}`}
     >
