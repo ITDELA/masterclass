@@ -7,7 +7,9 @@ const { includes, ingredients, isDark, title, subtitle, btn } = Astro.props;
 ---
 
 <div>
-  <h2 class={clsx(!isDark && "includes_title", isDark && "includes_dark_title")}>
+  <h2
+    class={clsx(!isDark && "includes_title", isDark && "includes_dark_title")}
+  >
     {title}
   </h2>
   <ul class="includes_list">
@@ -28,26 +30,46 @@ const { includes, ingredients, isDark, title, subtitle, btn } = Astro.props;
               fill={isDark ? "#060606" : "white"}
             />
           </svg>
-          <span class={clsx( !isDark && "includes_text", isDark && "includes_dark_text")}>
+          <span
+            class={clsx(
+              !isDark && "includes_text",
+              isDark && "includes_dark_text",
+            )}
+          >
             {item}
           </span>
         </li>
       ))
     }
   </ul>
-  <h3 class={clsx(!isDark && "includes_subtitle", isDark && "includes_dark_subtitle")}>{subtitle}</h3>
+  <h3
+    class={clsx(
+      !isDark && "includes_subtitle",
+      isDark && "includes_dark_subtitle",
+    )}
+  >
+    {subtitle}
+  </h3>
   <div class="includes_description">
-      {ingredients.map(({title, text}: Brand) => (
-        <dl class={clsx("includes_description", isDark && "includes_dark_description ")}>
+    {
+      ingredients.map(({ title, text }: Brand) => (
+        <dl
+          class={clsx(
+            "includes_description",
+            isDark && "includes_dark_description",
+          )}
+        >
           <dt style="margin-bottom:0;">
             <strong>{title}</strong>
           </dt>
           <dd>{text}</dd>
         </dl>
-      ))}
+      ))
+    }
   </div>
   <a
     href="#programa"
-    class={clsx(!isDark && "includes_btn", isDark && "includes_dark_btn")}>{btn}</a
+    class={clsx(!isDark && "includes_btn", isDark && "includes_dark_btn")}
+    >{btn}</a
   >
 </div>

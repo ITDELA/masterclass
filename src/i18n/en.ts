@@ -8,13 +8,15 @@ const en: Dictionary = {
   lang: "en",
   title: "Love starts with you",
   hero: {
+    //href: "/masterclass/es",
     href: "/es",
     alt: "GenetikPlux Logo",
     title: "This Valentine’s Day, the most important love starts with you",
   },
   welcome: {
     title: "Become an Exosome Expert with GenetikPlux:",
-    subtitle: "Premium training with the latest technology in advanced aesthetics.",
+    subtitle:
+      "Premium training with the latest technology in advanced aesthetics.",
     text: "Immediate Professional Certification",
     btn: "GIVING IS ALSO LOVE",
   },

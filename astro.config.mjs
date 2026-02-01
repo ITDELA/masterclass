@@ -11,7 +11,7 @@ export default defineConfig({
   site: "https://ITDELA.github.io",
 
   // El nombre de tu repositorio con barras al inicio y final
-  // base: '/masterclass/',
+  //base: "/masterclass/",
   base: "/",
 
   vite: {

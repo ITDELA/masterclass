@@ -24,7 +24,7 @@
 }
 
 .includes_title {
-  @apply font-normal text-[#060606] text-3xl  md:text-4xl lg:text-5xl;
+  @apply text-3xl font-normal text-[#060606] md:text-4xl lg:text-5xl;
   font-family: "Playfair Display", serif;
 }
 
@@ -34,12 +34,12 @@
 }
 
 .includes_subtitle {
-  @apply text-2xl font-normal text-[#060606] md:text-3xl lg:text-4xl my-6;
+  @apply my-6 text-2xl font-normal text-[#060606] md:text-3xl lg:text-4xl;
   font-family: "Playfair Display", serif;
 }
 
 .includes_dark_subtitle {
-  @apply text-2xl font-normal text-white md:text-3xl lg:text-4xl my-6;
+  @apply my-6 text-2xl font-normal text-white md:text-3xl lg:text-4xl;
   font-family: "Playfair Display", serif;
 }
 

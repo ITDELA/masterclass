@@ -10,12 +10,19 @@ const { isDark, include } = Astro.props;
 const { title, btn, includes, ingredients, subtitle, img, alt } = include;
 ---
 
-<section class={clsx(!isDark &&"includes", isDark && "includes_dark")}>
+<section class={clsx(!isDark && "includes", isDark && "includes_dark")}>
   <div class="includes_container">
     {
       isDark && (
         <div class="includes_grid">
-          <List includes={includes} isDark={isDark} title={title} btn={btn} subtitle={subtitle} ingredients={ingredients} />
+          <List
+            includes={includes}
+            isDark={isDark}
+            title={title}
+            btn={btn}
+            subtitle={subtitle}
+            ingredients={ingredients}
+          />
           <Img img={img} alt={alt} />
         </div>
       )
@@ -24,7 +31,14 @@ const { title, btn, includes, ingredients, subtitle, img, alt } = include;
       !isDark && (
         <div class="includes_grid">
           <Img img={img} alt={alt} />
-          <List includes={includes} isDark={isDark} title={title} btn={btn} subtitle={subtitle} ingredients={ingredients} />
+          <List
+            includes={includes}
+            isDark={isDark}
+            title={title}
+            btn={btn}
+            subtitle={subtitle}
+            ingredients={ingredients}
+          />
         </div>
       )
     }

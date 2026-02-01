@@ -8,13 +8,15 @@ const es: Dictionary = {
   lang: "es",
   title: "El amor empieza contigo",
   hero: {
+    //href: "/masterclass/",
     href: "/",
     alt: "GenetikPlux Logo",
     title: "Este día de San Valentín, el amor más importante empieza contigo",
   },
   welcome: {
     title: "Conviértete en experto en Exosomas con GenetikPlux:",
-    subtitle: "Formación premium con la última tecnología en estética avanzada.",
+    subtitle:
+      "Formación premium con la última tecnología en estética avanzada.",
     text: "Certificación Profesional inmediata",
     btn: "REGALAR TAMBIÉN ES AMOR",
   },

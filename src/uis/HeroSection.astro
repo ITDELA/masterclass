@@ -1,5 +1,9 @@
 ---
+import { Image } from "astro:assets";
+
 import { TextType } from "../components";
+import woman from "../assets/woman.mp4"
+import logo from "../assets/logo.png"
 
 const { lang, hero } = Astro.props;
 const { title, alt, href } = hero;
@@ -13,12 +17,7 @@ const nextLang = lang == "es" ? "en" : "es";
       class="hero_lang-btn"
       aria-label={`Switch language to ${nextLang.toUpperCase()}`}
     >
-      <svg
-        class="hero_lang-icon"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg class="hero_lang-icon" viewBox="0 0 24 24" fill="none">
         <path
           d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"
           stroke="currentColor"
@@ -50,22 +49,15 @@ const nextLang = lang == "es" ? "en" : "es";
         poster=""
         muted=""
         class="hero_bg-video"
-        src="./assets/woman.mp4"></video>
+        src={woman}></video>
     </div>
   </div>
   <div class="hero_bg-logo">
-    <img
-      alt={alt}
-      class="hero_bg-logo_img"
-      src="https://ext.same-assets.com/2397237772/2291279987.png"
-    />
+    <Image src={logo} alt={alt} class="hero_bg-logo_img" />
   </div>
   <div class="hero_aside">
     <div class="hero_aside-wrapper">
       <div class="max-w-4xl">
-        <!--
-          <h1 class="hero_aside-title text-white">{title}</h1>
-          -->
         <TextType
           text={[title]}
           typingSpeed={75}
