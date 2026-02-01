@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+.pricing {
+  @apply bg-white py-16 md:py-24;
+}
+
+.pricing_container {
+  @apply container mx-auto px-6;
+}
+
+.pricing_title {
+  @apply mb-12 text-center text-4xl font-normal text-[#060606] md:text-5xl;
+  font-family: "Playfair Display", serif;
+}
+
+.pricing_grid {
+  @apply mx-auto grid max-w-3xl gap-8 md:grid-cols-2;
+}
+
+.pricing_card {
+  @apply flex flex-col rounded-2xl bg-[#060606] p-8 text-center transition-all duration-300 hover:scale-105;
+}
+
+.pricing_card-title {
+  @apply text-lg font-medium tracking-[0.2em] text-white uppercase;
+}
+
+.pricing_card-price {
+  @apply my-6 text-5xl font-bold text-white md:text-6xl;
+  font-family: "Playfair Display", serif;
+}
+
+.pricing_card-noteRow {
+  @apply flex items-center justify-center gap-2;
+}
+
+.pricing_card-icon {
+  @apply h-5 w-5 text-[#4b9ddb];
+}
+
+.pricing_card-note {
+  @apply text-sm text-white/80 italic;
+}
+
+.pricing_card-btn {
+  @apply mt-8 rounded-lg bg-white px-8 py-4 text-sm font-medium tracking-[0.15em] text-[#060606] uppercase transition-all duration-300 hover:bg-[#bfa792] hover:text-white;
+}

@@ -1,29 +1,31 @@
 ---
+import type { Brand } from "../types"
+
 import { Image } from "astro:assets";
 import health from "../assets/health.jpeg";
 
-const { instructor } = Astro.props;
-const { instructors, title } = instructor;
+const { brand } = Astro.props;
+const { brands, title } = brand;
 ---
 
-<section class="instructor">
-  <div class="instructor_container">
-    <div class="instructor_grid">
-      <div class="instructor_media">
+<section class="brand">
+  <div class="brand_container">
+    <div class="brand_grid">
+      <div class="brand_media">
         <Image
           src={health}
           alt="Práctica de Masterclass"
-          class="instructor_image"
+          class="brand_image"
         />
       </div>
       <div>
-        <h2 class="instructor_title">{title}</h2>
-        <ul class="instructor_list">
+        <h2 class="brand_title">{title}</h2>
+        <ul class="brand_list">
           {
-            instructors.map((item: string) => (
-              <li class="instructor_item">
+            brands.map(({title, text}: Brand) => (
+              <li class="brand_item">
                 <svg
-                  class="instructor_icon"
+                  class="brand_icon"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -33,7 +35,10 @@ const { instructors, title } = instructor;
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                <span class="instructor_text">{item}</span>
+                <div class="brand_text">
+                  <strong>{title}</strong>
+                  <p>{text}</p>
+                </div>
               </li>
             ))
           }

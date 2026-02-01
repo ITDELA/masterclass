@@ -5,13 +5,13 @@ import HeroSection from "../../uis/HeroSection.astro";
 import WelcomeSection from "../../uis/WelcomeSection.astro";
 import IncludesSection from "../../uis/IncludesSection.astro";
 import ContentSection from "../../uis/ContentSection.astro";
-import InstructorSection from "../../uis/InstructorSection.astro";
+import BrandSection from "../../uis/BrandSection.astro";
 import FinishSection from "../../uis/FinishSection.astro";
 
 import { es } from "../../i18n";
 
-const { renewed, perfect, instructor, content } = es;
 const { title, lang, hero, welcome, timeless, footer } = es;
+const { renewed, perfect, brand, content, finish } = es;
 ---
 
 <Layout lang={lang} title={title} footer={footer}>
@@ -20,7 +20,7 @@ const { title, lang, hero, welcome, timeless, footer } = es;
   <IncludesSection include={timeless} isDark />
   <IncludesSection include={renewed} />
   <IncludesSection include={perfect} isDark />
-  <InstructorSection instructor={instructor} />
+  <BrandSection brand={brand} />
   <ContentSection content={content} />
-  <FinishSection instructor={instructor} />
+  <FinishSection finish={finish} />
 </Layout>

@@ -11,6 +11,11 @@ interface Content {
   description: string;
 }
 
+interface Brand {
+  title: string
+  text: string
+}
+
 interface Dictionary {
   lang: "es" | "en";
   title: string;
@@ -29,18 +34,22 @@ interface Dictionary {
   timeless: Includes;
   renewed: Includes;
   perfect: Includes;
-  instructor: {
+  brand: {
     title: string;
-    instructors: string[];
+    brands: Brand[];
   };
   content: {
     title: string;
     subtitle: string;
     contents: Content[];
   };
+  finish: {
+    title: string;
+    finishs: string[];
+  };
   footer: {
     copyrightText: string;
   };
 }
 
-export type { Dictionary, Content };
+export type { Dictionary, Content, Brand };

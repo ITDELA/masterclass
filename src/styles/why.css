@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+.why {
+  @apply bg-[#060606] py-16 md:py-24;
+}
+
+.why_container {
+  @apply container mx-auto px-6 lg:px-20;
+}
+
+.why_layout {
+  @apply mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row md:items-start;
+}
+
+.why_col {
+  @apply w-full md:w-1/2;
+}
+
+.why_heading {
+  @apply text-center md:text-left;
+}
+
+.why_title {
+  @apply text-3xl font-normal text-white md:text-4xl;
+  font-family: "Playfair Display", serif;
+}
+
+.why_subtitle {
+  @apply mt-4 text-sm text-white/70;
+}
+
+.why_list {
+  @apply mt-10 space-y-6 text-left;
+}
+
+.why_list-item {
+  @apply flex items-start gap-4;
+}
+
+.why_list-bullet {
+  @apply mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-white;
+}
+
+.why_list-text {
+  @apply text-base text-white md:text-lg;
+}
+
+.why_video-wrap {
+  @apply overflow-hidden rounded-2xl bg-black/20;
+}
+
+.why_video {
+  @apply h-[320px] w-full object-cover md:h-[420px];
+}

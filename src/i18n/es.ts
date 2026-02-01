@@ -60,13 +60,25 @@ const es: Dictionary = {
     img: brightness,
     alt: "Cero Manchas",
   },
-  instructor: {
+  brand: {
     title: "POR QUÉ ELEGIR GENETIKPLUX",
-    instructors: [
-      "Cuidarte no es vanidad, es necesidad Tu piel es el órgano más grande de tu cuerpo. Merece atención profesional.",
-      "Calidad profesional al alcance de tu mano Productos de grado clínico usados por médicos estéticos en toda Florida.",
-      "Resultados reales, no promesas vacías Tecnología MCCM respaldada por profesionales de la medicina estética.",
-      "Compromiso con tu transformación No solo vendemos productos, acompañamos tu viaje hacia tu mejor versión.",
+    brands: [
+      {
+        title: "Cuidarte no es vanidad, es necesidad.", 
+        text: "Tu piel es el órgano más grande de tu cuerpo. Merece atención profesional.",
+      },
+      {
+        title: "Calidad profesional al alcance de tu mano.", 
+        text: "Productos de grado clínico usados por médicos estéticos en toda Florida.",
+      },
+      {
+        title: "Resultados reales, no promesas vacías",
+        text: "Tecnología MCCM respaldada por profesionales de la medicina estética.",
+      },
+      {
+        title: "Compromiso con tu transformación", 
+        text: "No solo vendemos productos, acompañamos tu viaje hacia tu mejor versión.",
+      }
     ],
   },
   content: {
@@ -87,6 +99,16 @@ const es: Dictionary = {
         title: "New York",
         description: "Selección de pH, capas y tiempos de aplicación.",
       },
+    ],
+  },
+  finish: {
+    title: "Yo también merezco sentirme hermosa en mi propia piel.",
+    finishs: [
+      "Tu pareja que merece consentirse.",
+      "Tu mejor amiga que necesita un mimo especial.",
+      "Esa persona especial que valoras profundamente.",
+      "Tu mamá que siempre cuida de todos, menos de ella.",
+      "Porque el mejor regalo es el que cuida, transforma y perdura."
     ],
   },
   footer: {

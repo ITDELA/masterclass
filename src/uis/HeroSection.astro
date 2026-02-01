@@ -63,7 +63,20 @@ const nextLang = lang == "es" ? "en" : "es";
   <div class="hero_aside">
     <div class="hero_aside-wrapper">
       <div class="max-w-4xl">
-        <h1 class="hero_aside-title text-white">{title}</h1>
+        <!--
+          <h1 class="hero_aside-title text-white">{title}</h1>
+          -->
+        <TextType 
+          text={[title]}
+          typingSpeed={75}
+          pauseDuration={1500}
+          showCursor
+          cursorCharacter="_"
+          deletingSpeed={50}
+          cursorBlinkDuration={0.5}
+          className="hero_aside-title text-white"
+          client:load
+        />
       </div>
     </div>
   </div>

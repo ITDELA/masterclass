@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+.cities {
+  @apply bg-white py-16 md:py-24;
+}
+
+.cities_container {
+  @apply container mx-auto px-6;
+}
+
+.cities_title {
+  @apply mb-12 text-center text-4xl font-normal text-[#060606] md:text-5xl;
+  font-family: "Playfair Display", serif;
+}
+
+.cities_grid {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5;
+}
+
+.cities_card {
+  @apply flex w-3xs flex-col rounded-md bg-[#060606] p-6 text-center transition-all duration-300 hover:scale-105;
+}
+
+.cities_card-date {
+  @apply mb-2 text-4xl font-bold text-white md:text-5xl;
+  font-family: "Playfair Display", serif;
+}
+
+.cities_card-month {
+  @apply mb-4 text-xl font-medium text-white uppercase;
+}
+
+.cities_card-tour {
+  @apply mb-1 text-base text-white italic;
+}
+
+.cities_card-city {
+  @apply mb-2 text-base font-bold text-white italic;
+}
+
+.cities_card-venue {
+  @apply mb-6 text-base text-white/80;
+}
+
+.cities_card-btn {
+  @apply mt-auto rounded-lg bg-white px-6 py-3 text-xl font-medium text-[#060606] transition-all duration-300 hover:bg-[#bfa792] hover:text-white;
+}

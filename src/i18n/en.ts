@@ -60,13 +60,25 @@ const en: Dictionary = {
       "Radiant skin from the first week",
     ],
   },
-  instructor: {
+  brand: {
     title: "WHY CHOOSE GENETIK PLUX",
-    instructors: [
-      "Taking care of yourself isn't vanity, it's a necessity. Your skin is the largest organ in your body. It deserves professional attention.",
-      "Professional quality at your fingertips. Clinical-grade products used by aesthetic physicians throughout Florida.",
-      "Real results, not empty promises. MCCM technology backed by aesthetic medicine professionals.",
-      "Commitment to your transformation. We don't just sell products; we accompany you on your journey to becoming your best self.",
+    brands: [
+      {
+        title: "Taking care of yourself isn't vanity, it's a necessity.",
+        text: "Your skin is the largest organ in your body. It deserves professional attention.",
+      },
+      { 
+        title: "Professional quality at your fingertips.",
+        text: "Clinical-grade products used by aesthetic physicians throughout Florida.",
+      },
+      {
+        title: "Real results, not empty promises.", 
+        text: "MCCM technology backed by aesthetic medicine professionals.",
+      },
+      {
+        title: "Commitment to your transformation.",
+        text: "We don't just sell products; we accompany you on your journey to becoming your best self.",
+      }
     ],
   },
   content: {
@@ -87,6 +99,16 @@ const en: Dictionary = {
         title: "New York",
         description: "Selection of pH, layers, and application times.",
       },
+    ],
+  },
+  finish: {
+    title: "I also deserve to feel beautiful in my own skin.",
+    finishs: [
+      "Your partner who deserves to be pampered.",
+      "Your best friend who needs some extra TLC.",
+      "That special person you deeply value.",
+      "Your mom who always takes care of everyone but herself.",
+      "Because the best gift is the one that nurtures, transforms, and lasts."
     ],
   },
   footer: {

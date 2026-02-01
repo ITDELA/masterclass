@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+.finish {
+  @apply bg-white py-16 md:py-24;
+}
+
+.finish_container {
+  @apply container mx-auto px-6;
+}
+
+.finish_grid {
+  @apply grid items-center gap-12 lg:grid-cols-2;
+}
+
+.finish_media {
+  @apply relative overflow-hidden rounded-lg shadow-lg;
+}
+
+.finish_image {
+  @apply h-full w-full object-cover;
+}
+
+.finish_title {
+  @apply text-3xl font-normal text-[#060606] md:text-4xl lg:text-5xl;
+  font-family: "Playfair Display", serif;
+}
+
+.finish_list {
+  @apply mt-8 space-y-4;
+}
+
+.finish_item {
+  @apply flex items-start gap-3;
+}
+
+.finish_icon {
+  @apply mt-1 h-5 w-5 flex-shrink-0 text-[#c8102e];
+}
+
+.finish_text {
+  @apply text-base text-[#060606] md:text-lg;
+}
+
+.finish_btn {
+  @apply mt-10 inline-block bg-[#060606] px-10 py-4 text-sm font-medium tracking-[0.2em] text-white uppercase transition-all duration-300 hover:bg-[#bfa792];
+}

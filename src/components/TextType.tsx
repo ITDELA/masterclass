@@ -1,31 +1,10 @@
-import type { ElementType } from "react";
+import type { TextTypeProps } from "../types"
 
 import { useEffect, useRef, useMemo, useState } from "react";
 import { createElement, useCallback } from "react";
 import { gsap } from "gsap";
 
 import "../styles/textType.css";
-
-interface TextTypeProps {
-  className?: string;
-  showCursor?: boolean;
-  hideCursorWhileTyping?: boolean;
-  cursorCharacter?: string | React.ReactNode;
-  cursorBlinkDuration?: number;
-  cursorClassName?: string;
-  text: string | string[];
-  as?: ElementType;
-  typingSpeed?: number;
-  initialDelay?: number;
-  pauseDuration?: number;
-  deletingSpeed?: number;
-  loop?: boolean;
-  textColors?: string[];
-  variableSpeed?: { min: number; max: number };
-  onSentenceComplete?: (sentence: string, index: number) => void;
-  startOnVisible?: boolean;
-  reverseMode?: boolean;
-}
 
 const TextType = ({
   text,
@@ -47,7 +26,7 @@ const TextType = ({
   startOnVisible = false,
   reverseMode = false,
   ...props
-}: TextTypeProps & React.HTMLAttributes<HTMLElement>) => {
+}: TextTypeProps) => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);

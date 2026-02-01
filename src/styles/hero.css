@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+.hero {
+  @apply relative h-[70vh] w-full overflow-hidden;
+}
+
+.hero_bg {
+  @apply absolute inset-0;
+}
+
+.hero_bg-banner {
+  @apply h-full w-full rounded-none border-0;
+}
+
+.hero_bg-logo {
+  @apply relative z-10 flex justify-center pt-8 md:pt-12;
+}
+
+.hero_bg-logo_img {
+  @apply h-12 w-auto;
+}
+
+.hero_bg-video {
+  @apply h-full w-full object-cover;
+}
+
+.hero_aside {
+  @apply relative z-10 flex h-full items-center;
+}
+
+.hero_aside-wrapper {
+  @apply container mx-auto;
+}
+
+.hero_aside-title {
+  @apply text-5xl md:text-4xl lg:text-5xl;
+  font-family: "Grotesk", sans-serif;
+}
+
+.hero_aside-subtitle_first {
+  @apply mt-6 text-3xl font-normal md:text-4xl;
+}
+
+.hero_aside-subtitle_second {
+  @apply mt-1 text-3xl font-normal md:text-4xl;
+}
+
+.hero_aside-text {
+  @apply mt-4 text-lg font-medium tracking-wide md:text-2xl;
+}
+
+.hero_aside-btn {
+  @apply mt-10 inline-block bg-[#060606] px-10 py-4 font-medium tracking-[0.2em] text-white uppercase shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white;
+}
+
+.hero_lang {
+  @apply absolute top-6 right-auto left-6 z-20 md:right-6 md:left-auto;
+}
+
+.hero_lang-btn {
+  @apply inline-flex items-center gap-2 rounded-full bg-black/50 px-4 py-2 text-xs font-semibold tracking-[0.2em] text-white uppercase backdrop-blur-sm transition-colors hover:bg-black/70;
+}
+
+.hero_lang-icon {
+  @apply h-4 w-4;
+}

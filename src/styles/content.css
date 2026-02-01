@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+.content {
+  @apply bg-[#060606] py-16 md:py-20;
+}
+
+.content_container {
+  @apply container mx-auto px-6;
+}
+
+.content_header {
+  @apply text-center;
+}
+
+.content_title {
+  @apply text-3xl font-bold text-white md:text-4xl lg:text-5xl;
+}
+
+.content_subtitle {
+  @apply mt-4 text-xl text-white/70 md:text-2xl;
+}
+
+.content_grid {
+  @apply mt-12 grid gap-8 md:grid-cols-3;
+}
+
+.content_item {
+  @apply w-3xs text-center;
+}
+
+.content_item-title {
+  @apply text-xl font-semibold text-white italic md:text-2xl;
+  font-family: "Playfair Display", serif;
+}
+
+.content_item-text {
+  @apply mt-3 text-sm text-white/70 md:text-base;
+}
