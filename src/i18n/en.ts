@@ -8,8 +8,8 @@ const en: Dictionary = {
   lang: "en",
   title: "Love starts with you",
   hero: {
-    href: "/masterclass/es",
-    // href: "/es",
+    href: "/masterclass/es/",
+    // href: "/es/",
     alt: "GenetikPlux Logo",
     title: "This Valentine’s Day, the most important love starts with you",
   },
