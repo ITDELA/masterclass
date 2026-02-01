@@ -1,12 +1,9 @@
 ---
-import { SplitText, BlurText } from "../components";
-import "animate.css";
-
+import { TextType } from "../components";
 
 const { lang, hero } = Astro.props;
-const {title, alt, href } = hero
-const nextLang = lang === "es" ? "en" : "es";
-
+const { title, alt, href } = hero;
+const nextLang = lang == "es" ? "en" : "es";
 ---
 
 <section class="hero">

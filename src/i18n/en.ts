@@ -17,7 +17,7 @@ const en: Dictionary = {
     subtitle_first: "Premium training with the latest",
     subtitle_second: "technology in advanced aesthetics.",
     text: "Immediate Professional Certification",
-    btn: "GIVING IS ALSO LOVE"
+    btn: "GIVING IS ALSO LOVE",
   },
   timeless: {
     img: youth,
@@ -30,8 +30,8 @@ const en: Dictionary = {
       "Deep hydration with hyaluronic acid",
       "Active cell regeneration",
       "Silky-smooth texture",
-      "Restored natural radiance"
-    ]
+      "Restored natural radiance",
+    ],
   },
   renewed: {
     img: look,
@@ -43,8 +43,8 @@ const en: Dictionary = {
       "24-hour intensive hydration",
       "Cellular regeneration of the eye contour",
       "A more awake and radiant look",
-      "Smooth texture and blurred lines"
-    ]
+      "Smooth texture and blurred lines",
+    ],
   },
   perfect: {
     img: brightness,
@@ -57,8 +57,8 @@ const en: Dictionary = {
       "Professional depigmenting action",
       "Prevention of new dark spots",
       "Balanced hydration",
-      "Radiant skin from the first week"
-    ]
+      "Radiant skin from the first week",
+    ],
   },
   instructor: {
     title: "WHY CHOOSE GENETIK PLUX",
@@ -66,9 +66,32 @@ const en: Dictionary = {
       "Taking care of yourself isn't vanity, it's a necessity. Your skin is the largest organ in your body. It deserves professional attention.",
       "Professional quality at your fingertips. Clinical-grade products used by aesthetic physicians throughout Florida.",
       "Real results, not empty promises. MCCM technology backed by aesthetic medicine professionals.",
-      "Commitment to your transformation. We don't just sell products; we accompany you on your journey to becoming your best self."
-    ]
-  }
+      "Commitment to your transformation. We don't just sell products; we accompany you on your journey to becoming your best self.",
+    ],
+  },
+  content: {
+    title: "Available only until February 14th",
+    subtitle: "Nationwide shipping or visit us at",
+    contents: [
+      {
+        title: "Miami",
+        description:
+          "Vesicles, cargo (Mirna/proteins) PI3K/Akt, MAPK/ERK pathways.",
+      },
+      {
+        title: "Boston",
+        description:
+          "Exosomes + PDRN + (complementary pathways: vesicular, nuclear, and mitochondrial).",
+      },
+      {
+        title: "New York",
+        description: "Selection of pH, layers, and application times.",
+      },
+    ],
+  },
+  footer: {
+    copyrightText: "Copyright 2025. All rights reserved",
+  },
 };
 
 export { en };

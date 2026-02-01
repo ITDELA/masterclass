@@ -1,21 +1,8 @@
 ---
-const contents = [
-  {
-    title: "Miami",
-    description: "Vesículas, carga (Mirna/proteínas) vías PI3K/Akt, MAPK/ERK.",
-  },
-  {
-    title: "Boston",
-    description:
-      "Exosomas + PDRN + (rutas complementarias: vesicular, nuclear y mitocondrial).",
-  },
-  {
-    title: "New York",
-    description: "Selección de pH, capas y tiempos de aplicación.",
-  },
-];
-const title = "Disponible solo hasta el 14 de febrero";
-const subtitle = "Envíos a nivel nacional o visitanos en";
+import type { Content } from "../types";
+
+const { content } = Astro.props;
+const { contents, title, subtitle } = content;
 ---
 
 <section class="content">
@@ -27,10 +14,10 @@ const subtitle = "Envíos a nivel nacional o visitanos en";
 
     <div class="content_grid">
       {
-        contents.map((content, index) => (
+        contents.map((item: Content) => (
           <div class="content_item">
-            <h3 class="content_item-title">{content.title}</h3>
-            <p class="content_item-text">{content.description}</p>
+            <h3 class="content_item-title">{item.title}</h3>
+            <p class="content_item-text">{item.description}</p>
           </div>
         ))
       }

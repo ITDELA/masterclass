@@ -6,26 +6,21 @@ import WelcomeSection from "../uis/WelcomeSection.astro";
 import IncludesSection from "../uis/IncludesSection.astro";
 import ContentSection from "../uis/ContentSection.astro";
 import InstructorSection from "../uis/InstructorSection.astro";
-import FinishSection from "../uis/FinishSection.astro"
+import FinishSection from "../uis/FinishSection.astro";
 
 import { en } from "../i18n";
 
-const { title, lang, hero, welcome, timeless, renewed, perfect, instructor } = en;
+const { renewed, perfect, instructor, content } = en;
+const { title, lang, hero, welcome, timeless, footer } = en;
 ---
 
-<Layout lang={lang} title={title}>
-  <HeroSection hero={hero} />
+<Layout lang={lang} title={title} footer={footer}>
+  <HeroSection lang={lang} hero={hero} />
   <WelcomeSection welcome={welcome} />
   <IncludesSection include={timeless} isDark />
   <IncludesSection include={renewed} />
   <IncludesSection include={perfect} isDark />
   <InstructorSection instructor={instructor} />
-  <ContentSection />
+  <ContentSection content={content} />
   <FinishSection instructor={instructor} />
 </Layout>
-
-<!--
-	<WhySection />
-	<PricingSection />
-	<TestimonialsSection />
--->

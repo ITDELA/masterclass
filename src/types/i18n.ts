@@ -6,18 +6,23 @@ interface Includes {
   includes: string[];
 }
 
+interface Content {
+  title: string;
+  description: string;
+}
+
 interface Dictionary {
   lang: "es" | "en";
   title: string;
   welcome: {
-    title: string,
-    subtitle_first: string,
-    subtitle_second: string,
-    text: string,
-    btn: string
-  }
+    title: string;
+    subtitle_first: string;
+    subtitle_second: string;
+    text: string;
+    btn: string;
+  };
   hero: {
-    href: string,
+    href: string;
     alt: string;
     title: string;
   };
@@ -25,9 +30,17 @@ interface Dictionary {
   renewed: Includes;
   perfect: Includes;
   instructor: {
-    title: string,
-    instructors: string[]
-  }
+    title: string;
+    instructors: string[];
+  };
+  content: {
+    title: string;
+    subtitle: string;
+    contents: Content[];
+  };
+  footer: {
+    copyrightText: string;
+  };
 }
 
-export type { Dictionary };
+export type { Dictionary, Content };
