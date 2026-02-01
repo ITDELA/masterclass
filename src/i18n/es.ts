@@ -14,12 +14,12 @@ const es: Dictionary = {
   },
   welcome: {
     title: "Conviértete en experto en Exosomas con GenetikPlux:",
-    subtitle_first: "Formación premium con la última",
-    subtitle_second: "tecnología en estética avanzada.",
+    subtitle: "Formación premium con la última tecnología en estética avanzada.",
     text: "Certificación Profesional inmediata",
     btn: "REGALAR TAMBIÉN ES AMOR",
   },
   timeless: {
+    subtitle: "El paquete contiene",
     includes: [
       "Reducción visible de líneas de expresión",
       "Piel más firme y elástica",
@@ -29,11 +29,26 @@ const es: Dictionary = {
       "Luminosidad natural restaurada",
     ],
     title: "Juventud Atemporal",
-    btn: "Cero Arrugas",
+    btn: "Quiero piel sin edad",
     img: youth,
     alt: "Cero arrugas",
+    ingredients: [
+      {
+        title: "HIALURINIC PEPTIDE REPAIR",
+        text: "Butilenglicol, acetil    tetrapéptido-5, hialuronato de sodio",
+      },
+      {
+        title: "XR CELLULAR MAGIC",
+        text: "Extracto de Borago Officinalis, aceite de ricino, dimetilmea, hialuronato de sodio, palmitato de ascorbilo",
+      },
+      {
+        title: "ANTIAGING CREAM 50 ML",
+        text: "Persea Gratissima, Colágeno, Proteoglicanos, Gluten de Trigo Hidrolizado",
+      },
+    ],
   },
   renewed: {
+    subtitle: "El paquete contiene",
     includes: [
       "Reduce ojeras y bolsas visiblemente",
       "Hidratación intensiva 24 horas",
@@ -42,11 +57,26 @@ const es: Dictionary = {
       "Textura suave y líneas difuminadas",
     ],
     title: "Mirada Renovada",
-    btn: "Cero Ojos Cansados",
+    btn: "Quiero mi mirada renovada",
     img: look,
     alt: "Cero Ojos Cansados",
+    ingredients: [
+      {
+        title: "REGERATOR CREAM",
+        text: "Extracto de Aloe Barbadensis, ésteres PEG-6 de aceite de hueso de albaricoque, Mimosa Tenuiflora, proteína de soja hidrolizada",
+      },
+      {
+        title: "XR CELLULAR PERFOMANCE",
+        text: "Cera Alba, bisabolol, acetato de tocoferilo, palmitato de ascorbilo",
+      },
+      {
+        title: "HYDRAFACE CREAM",
+        text: "Extracto de hoja de mimosa tenuiflora, glicerina, serina, acetato de tocoferilo, palmitato de retinilo",
+      },
+    ],
   },
   perfect: {
+    subtitle: "El paquete contiene",
     includes: [
       "Reducción visible de manchas y hiperpigmentación",
       "Tono de piel unificado y luminoso",
@@ -56,19 +86,33 @@ const es: Dictionary = {
       "Piel radiante desde la primera semana",
     ],
     title: "Luminosidad Perfecta",
-    btn: "Cero Manchas",
+    btn: "Despídete de las manchas",
     img: brightness,
     alt: "Cero Manchas",
+    ingredients: [
+      {
+        title: "WA ARBUTIN CREAM",
+        text: "Alfa-Arbutina, Ácido Hialurónico, Alantoína",
+      },
+      {
+        title: "MELANOUT CREAM",
+        text: "Ácido kójico, ácido salicílico, arbutina, ácido láctico, ácido fítico, urea, alantoína",
+      },
+      {
+        title: "HYDRAFACE CREAM",
+        text: "Extracto de hoja de mimosa tenuiflora, glicerina, serina, acetato de tocoferilo, palmitato de retinilo",
+      },
+    ],
   },
   brand: {
     title: "POR QUÉ ELEGIR GENETIKPLUX",
     brands: [
       {
-        title: "Cuidarte no es vanidad, es necesidad.", 
+        title: "Cuidarte no es vanidad, es necesidad.",
         text: "Tu piel es el órgano más grande de tu cuerpo. Merece atención profesional.",
       },
       {
-        title: "Calidad profesional al alcance de tu mano.", 
+        title: "Calidad profesional al alcance de tu mano.",
         text: "Productos de grado clínico usados por médicos estéticos en toda Florida.",
       },
       {
@@ -76,9 +120,9 @@ const es: Dictionary = {
         text: "Tecnología MCCM respaldada por profesionales de la medicina estética.",
       },
       {
-        title: "Compromiso con tu transformación", 
+        title: "Compromiso con tu transformación",
         text: "No solo vendemos productos, acompañamos tu viaje hacia tu mejor versión.",
-      }
+      },
     ],
   },
   content: {
@@ -108,7 +152,7 @@ const es: Dictionary = {
       "Tu mejor amiga que necesita un mimo especial.",
       "Esa persona especial que valoras profundamente.",
       "Tu mamá que siempre cuida de todos, menos de ella.",
-      "Porque el mejor regalo es el que cuida, transforma y perdura."
+      "Porque el mejor regalo es el que cuida, transforma y perdura.",
     ],
   },
   footer: {

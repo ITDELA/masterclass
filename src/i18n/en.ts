@@ -14,15 +14,15 @@ const en: Dictionary = {
   },
   welcome: {
     title: "Become an Exosome Expert with GenetikPlux:",
-    subtitle_first: "Premium training with the latest",
-    subtitle_second: "technology in advanced aesthetics.",
+    subtitle: "Premium training with the latest technology in advanced aesthetics.",
     text: "Immediate Professional Certification",
     btn: "GIVING IS ALSO LOVE",
   },
   timeless: {
+    subtitle: "The package contains",
     img: youth,
     title: "Timeless Youth",
-    btn: "Zero Wrinkles",
+    btn: "I want ageless skin",
     alt: "Zero Wrinkles",
     includes: [
       "Visible reduction of fine lines",
@@ -32,11 +32,26 @@ const en: Dictionary = {
       "Silky-smooth texture",
       "Restored natural radiance",
     ],
+    ingredients: [
+      {
+        title: "HIALURINIC PEPTIDE REPAIR",
+        text: "Butilenglicol, acetil    tetrapéptido-5, hialuronato de sodio",
+      },
+      {
+        title: "XR CELLULAR MAGIC",
+        text: "Extracto de Borago Officinalis, aceite de ricino, dimetilmea, hialuronato de sodio, palmitato de ascorbilo",
+      },
+      {
+        title: "ANTIAGING CREAM 50 ML",
+        text: "Persea Gratissima, Colágeno, Proteoglicanos, Gluten de Trigo Hidrolizado",
+      },
+    ],
   },
   renewed: {
+    subtitle: "The package contains",
     img: look,
     title: "A Renewed Perspective",
-    btn: "Zero Tired Eyes",
+    btn: "I want my gaze renewed",
     alt: "Zero Tired Eyes",
     includes: [
       "Visibly reduces dark circles and puffiness",
@@ -45,10 +60,25 @@ const en: Dictionary = {
       "A more awake and radiant look",
       "Smooth texture and blurred lines",
     ],
+    ingredients: [
+      {
+        title: "REGERATOR CREAM",
+        text: "Extracto de Aloe Barbadensis, ésteres PEG-6 de aceite de hueso de albaricoque, Mimosa Tenuiflora, proteína de soja hidrolizada",
+      },
+      {
+        title: "XR CELLULAR PERFOMANCE",
+        text: "Cera Alba, bisabolol, acetato de tocoferilo, palmitato de ascorbilo",
+      },
+      {
+        title: "HYDRAFACE CREAM",
+        text: "Extracto de hoja de mimosa tenuiflora, glicerina, serina, acetato de tocoferilo, palmitato de retinilo",
+      },
+    ],
   },
   perfect: {
+    subtitle: "The package contains",
     img: brightness,
-    btn: "Zero Stains",
+    btn: "Say goodbye to stains",
     alt: "Zero Stains",
     title: "Perfect Luminosity",
     includes: [
@@ -59,6 +89,20 @@ const en: Dictionary = {
       "Balanced hydration",
       "Radiant skin from the first week",
     ],
+    ingredients: [
+      {
+        title: "WA ARBUTIN CREAM",
+        text: "Alfa-Arbutina, Ácido Hialurónico, Alantoína",
+      },
+      {
+        title: "MELANOUT CREAM",
+        text: "Ácido kójico, ácido salicílico, arbutina, ácido láctico, ácido fítico, urea, alantoína",
+      },
+      {
+        title: "HYDRAFACE CREAM",
+        text: "Extracto de hoja de mimosa tenuiflora, glicerina, serina, acetato de tocoferilo, palmitato de retinilo",
+      },
+    ],
   },
   brand: {
     title: "WHY CHOOSE GENETIK PLUX",
@@ -67,18 +111,18 @@ const en: Dictionary = {
         title: "Taking care of yourself isn't vanity, it's a necessity.",
         text: "Your skin is the largest organ in your body. It deserves professional attention.",
       },
-      { 
+      {
         title: "Professional quality at your fingertips.",
         text: "Clinical-grade products used by aesthetic physicians throughout Florida.",
       },
       {
-        title: "Real results, not empty promises.", 
+        title: "Real results, not empty promises.",
         text: "MCCM technology backed by aesthetic medicine professionals.",
       },
       {
         title: "Commitment to your transformation.",
         text: "We don't just sell products; we accompany you on your journey to becoming your best self.",
-      }
+      },
     ],
   },
   content: {
@@ -108,7 +152,7 @@ const en: Dictionary = {
       "Your best friend who needs some extra TLC.",
       "That special person you deeply value.",
       "Your mom who always takes care of everyone but herself.",
-      "Because the best gift is the one that nurtures, transforms, and lasts."
+      "Because the best gift is the one that nurtures, transforms, and lasts.",
     ],
   },
   footer: {

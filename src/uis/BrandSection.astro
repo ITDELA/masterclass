@@ -1,8 +1,8 @@
 ---
-import type { Brand } from "../types"
+import type { Brand } from "../types";
 
 import { Image } from "astro:assets";
-import health from "../assets/health.jpeg";
+import health from "../assets/health.png";
 
 const { brand } = Astro.props;
 const { brands, title } = brand;
@@ -12,23 +12,15 @@ const { brands, title } = brand;
   <div class="brand_container">
     <div class="brand_grid">
       <div class="brand_media">
-        <Image
-          src={health}
-          alt="Práctica de Masterclass"
-          class="brand_image"
-        />
+        <Image src={health} alt="Práctica de Masterclass" class="brand_image" />
       </div>
       <div>
         <h2 class="brand_title">{title}</h2>
         <ul class="brand_list">
           {
-            brands.map(({title, text}: Brand) => (
+            brands.map(({ title, text }: Brand) => (
               <li class="brand_item">
-                <svg
-                  class="brand_icon"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
+                <svg class="brand_icon" viewBox="0 0 20 20" fill="currentColor">
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"

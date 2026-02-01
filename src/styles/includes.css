@@ -24,13 +24,27 @@
 }
 
 .includes_title {
-  @apply text-3xl font-normal text-[#060606] md:text-4xl lg:text-5xl;
+  @apply font-normal text-[#060606] text-3xl  md:text-4xl lg:text-5xl;
   font-family: "Playfair Display", serif;
 }
 
 .includes_dark_title {
   @apply text-3xl font-normal text-white md:text-4xl lg:text-5xl;
   font-family: "Playfair Display", serif;
+}
+
+.includes_subtitle {
+  @apply text-2xl font-normal text-[#060606] md:text-3xl lg:text-4xl my-6;
+  font-family: "Playfair Display", serif;
+}
+
+.includes_dark_subtitle {
+  @apply text-2xl font-normal text-white md:text-3xl lg:text-4xl my-6;
+  font-family: "Playfair Display", serif;
+}
+
+.includes_description {
+  @apply space-y-4;
 }
 
 .includes_list {
@@ -46,10 +60,18 @@
 }
 
 .includes_text {
-  @apply text-base text-[#060606] md:text-lg;
+  @apply text-lg text-[#060606] md:text-2xl;
 }
 
 .includes_dark_text {
+  @apply text-lg text-white md:text-2xl;
+}
+
+.includes_description {
+  @apply text-base text-[#060606] md:text-lg;
+}
+
+.includes_dark_description {
   @apply text-base text-white md:text-lg;
 }
 

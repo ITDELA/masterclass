@@ -1,12 +1,13 @@
 ---
+import type { Brand } from "../../types";
+
 import { clsx } from "clsx";
 
-const { includes, isDark, title, btn } = Astro.props;
-
+const { includes, ingredients, isDark, title, subtitle, btn } = Astro.props;
 ---
 
 <div>
-  <h2 class={clsx("includes_title", isDark && "includes_dark_title")}>
+  <h2 class={clsx(!isDark && "includes_title", isDark && "includes_dark_title")}>
     {title}
   </h2>
   <ul class="includes_list">
@@ -14,23 +15,39 @@ const { includes, isDark, title, btn } = Astro.props;
       includes.map((item: string) => (
         <li class="includes_item">
           <svg class="includes_icon" viewBox="0 0 20 20">
-            <circle r="10" cx="10" cy="10" fill={isDark ? "white" : '#060606'} />
+            <circle
+              r="10"
+              cx="10"
+              cy="10"
+              fill={isDark ? "white" : "#060606"}
+            />
             <path
               fill-rule="evenodd"
               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
               clip-rule="evenodd"
-              fill={isDark ? '#060606' : "white"}
+              fill={isDark ? "#060606" : "white"}
             />
           </svg>
-          <span class={clsx("includes_text", isDark && "includes_dark_text")}>
+          <span class={clsx( !isDark && "includes_text", isDark && "includes_dark_text")}>
             {item}
           </span>
         </li>
       ))
     }
   </ul>
+  <h3 class={clsx(!isDark && "includes_subtitle", isDark && "includes_dark_subtitle")}>{subtitle}</h3>
+  <div class="includes_description">
+      {ingredients.map(({title, text}: Brand) => (
+        <dl class={clsx("includes_description", isDark && "includes_dark_description ")}>
+          <dt style="margin-bottom:0;">
+            <strong>{title}</strong>
+          </dt>
+          <dd>{text}</dd>
+        </dl>
+      ))}
+  </div>
   <a
     href="#programa"
-    class={clsx("includes_btn", isDark && "includes_dark_btn")}>{btn}</a
+    class={clsx(!isDark && "includes_btn", isDark && "includes_dark_btn")}>{btn}</a
   >
 </div>

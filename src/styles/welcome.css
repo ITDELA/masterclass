@@ -1,47 +1,74 @@
 @import "tailwindcss";
 
-.cities {
+.welcome {
   @apply bg-white py-16 md:py-24;
 }
 
-.cities_container {
+.welcome_container {
   @apply container mx-auto px-6;
 }
 
-.cities_title {
+.welcome_title {
   @apply mb-12 text-center text-4xl font-normal text-[#060606] md:text-5xl;
   font-family: "Playfair Display", serif;
 }
 
-.cities_grid {
+.welcome_grid {
   @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5;
 }
 
-.cities_card {
+.welcome_card {
   @apply flex w-3xs flex-col rounded-md bg-[#060606] p-6 text-center transition-all duration-300 hover:scale-105;
 }
 
-.cities_card-date {
+.welcome_card-date {
   @apply mb-2 text-4xl font-bold text-white md:text-5xl;
   font-family: "Playfair Display", serif;
 }
 
-.cities_card-month {
+.welcome_card-month {
   @apply mb-4 text-xl font-medium text-white uppercase;
 }
 
-.cities_card-tour {
+.welcome_card-tour {
   @apply mb-1 text-base text-white italic;
 }
 
-.cities_card-city {
+.welcome_card-city {
   @apply mb-2 text-base font-bold text-white italic;
 }
 
-.cities_card-venue {
+.welcome_card-venue {
   @apply mb-6 text-base text-white/80;
 }
 
-.cities_card-btn {
+.welcome_card-btn {
   @apply mt-auto rounded-lg bg-white px-6 py-3 text-xl font-medium text-[#060606] transition-all duration-300 hover:bg-[#bfa792] hover:text-white;
+}
+
+/** */
+
+.welcome_aside {
+  @apply relative z-10 flex h-full items-center;
+}
+
+.welcome_aside-wrapper {
+  @apply container mx-auto;
+}
+
+.welcome_aside-title {
+  @apply text-5xl text-center md:text-6xl lg:text-7xl text-[#c8102e];
+  font-family: "Grotesk", sans-serif;
+}
+
+.welcome_aside-subtitle {
+  @apply mt-6 text-2xl font-normal md:text-3xl text-[#c8102e];
+}
+
+.welcome_aside-text {
+  @apply mt-4 text-lg font-medium tracking-wide md:text-2xl text-[#c8102e];
+}
+
+.welcome_aside-btn {
+  @apply mt-10 inline-block bg-[#060606] px-10 py-4 font-medium tracking-[0.2em] text-white uppercase shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white;
 }

@@ -49,34 +49,34 @@ html {
 }
 
 /* Hero */
-@import './hero.css';
+@import "./hero.css";
 
-/* Cities */
-@import './cities.css';
+/* Welcome */
+@import "./welcome.css";
 
 /* Why */
-@import './cta.css';
+@import "./cta.css";
 
 /* Includes */
-@import './includes.css';
+@import "./includes.css";
 
 /* Content */
-@import './content.css';
+@import "./content.css";
 
 /* Pricing */
-@import './pricing.css';
+@import "./pricing.css";
 
 /* Brand */
-@import './brand.css';
+@import "./brand.css";
 
 /* CTA */
-@import './cta.css';
+@import "./cta.css";
 
 /* Testimonials */
-@import './testimonials.css';
+@import "./testimonials.css";
 
 /* Footer */
-@import './footer.css';
+@import "./footer.css";
 
 /* Finish */
-@import './finish.css';
+@import "./finish.css";

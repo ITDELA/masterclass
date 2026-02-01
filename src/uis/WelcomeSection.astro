@@ -3,33 +3,34 @@ import { SplitText, BlurText } from "../components";
 import "animate.css";
 
 const { welcome } = Astro.props;
-const { title, subtitle_first, subtitle_second, text, btn } = welcome;
+const { title, subtitle, text, btn } = welcome;
 ---
 
-<section class="cities">
-  <div class="cities_container">
-    <div class="max-w-4xl">
-      <h1 class="hero_aside-title text-[#c8102e]">{title}</h1>
+<section class="welcome">
+  <div class="welcome_container">
+    <!--
+      <h1 class="welcome_aside-title">{title}</h1>
+      -->  
       <BlurText
-        text={subtitle_first}
-        delay={300}
+        text={title}
+        delay={50}
         animateBy="words"
         direction="top"
-        className="hero_aside-subtitle_first text-[#c8102e]"
+        className="welcome_aside-title"
         client:load
       />
       <BlurText
-        text={subtitle_second}
-        delay={1500}
+        text={subtitle}
+        delay={300}
         animateBy="words"
         direction="bottom"
-        className="hero_aside-subtitle_second text-[#c8102e]"
+        className="welcome_aside-subtitle"
         client:load
       />
       <SplitText
         text={text}
-        className="hero_aside-text text-[#c8102e]"
-        delay={250}
+        className="welcome_aside-text"
+        delay={150}
         duration={1.25}
         ease="power3.out"
         splitType="chars"
@@ -44,11 +45,10 @@ const { title, subtitle_first, subtitle_second, text, btn } = welcome;
           href="./assets/PROGRAMA-EDUCATIVO.pdf"
           target="_blank"
           rel="noopener"
-          class="hero_aside-btn animate__animated animate__pulse"
+          class="welcome_aside-btn animate__animated animate__pulse"
         >
           {btn}
         </a>
       </div>
-    </div>
   </div>
 </section>

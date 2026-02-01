@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .hero {
-  @apply relative h-[70vh] w-full overflow-hidden;
+  @apply relative h-[45vh] w-full overflow-hidden;
 }
 
 .hero_bg {
@@ -33,7 +33,7 @@
 }
 
 .hero_aside-title {
-  @apply text-5xl md:text-4xl lg:text-5xl;
+  @apply text-5xl md:text-6xl lg:text-7xl;
   font-family: "Grotesk", sans-serif;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .hero_lang {
-  @apply absolute top-6 right-auto left-6 z-20 md:right-6 md:left-auto;
+  @apply absolute top-8 right-auto left-6 z-20 md:right-6 md:left-auto;
 }
 
 .hero_lang-btn {

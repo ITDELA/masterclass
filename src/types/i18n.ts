@@ -1,9 +1,16 @@
+interface Brand {
+  title: string;
+  text: string;
+}
+
 interface Includes {
   title: string;
+  subtitle: string;
   btn: string;
   img: ImageMetadata;
   alt: string;
   includes: string[];
+  ingredients: Brand[];
 }
 
 interface Content {
@@ -11,18 +18,12 @@ interface Content {
   description: string;
 }
 
-interface Brand {
-  title: string
-  text: string
-}
-
 interface Dictionary {
   lang: "es" | "en";
   title: string;
   welcome: {
     title: string;
-    subtitle_first: string;
-    subtitle_second: string;
+    subtitle: string;
     text: string;
     btn: string;
   };

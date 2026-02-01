@@ -1,4 +1,4 @@
-import type { TextTypeProps } from "../types"
+import type { TextTypeProps } from "../types";
 
 import { useEffect, useRef, useMemo, useState } from "react";
 import { createElement, useCallback } from "react";

@@ -21,6 +21,6 @@ interface TextTypeInput {
   reverseMode?: boolean;
 }
 
-type TextTypeProps = TextTypeInput & React.HTMLAttributes<HTMLElement>
+type TextTypeProps = TextTypeInput & React.HTMLAttributes<HTMLElement>;
 
-export type { TextTypeProps }
+export type { TextTypeProps };
