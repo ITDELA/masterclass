@@ -4,6 +4,7 @@ interface Brand {
 }
 
 interface Includes {
+  id: string;
   title: string;
   subtitle: string;
   btn: string;
@@ -25,6 +26,7 @@ interface Dictionary {
     title: string;
     subtitle: string;
     text: string;
+    subtext: string;
     btn: string;
   };
   hero: {

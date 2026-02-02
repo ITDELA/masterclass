@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .welcome {
-  @apply bg-white py-16 md:py-24;
+  @apply bg-white py-16 md:py-24 lg:py-36;
 }
 
 .welcome_container {
@@ -57,18 +57,22 @@
 }
 
 .welcome_aside-title {
-  @apply text-center text-5xl text-[#c8102e] md:text-6xl lg:text-7xl;
+  @apply text-center text-3xl text-[#c8102e] md:text-5xl lg:text-7xl;
   font-family: "Grotesk", sans-serif;
 }
 
 .welcome_aside-subtitle {
-  @apply mt-6 text-2xl font-normal text-[#c8102e] md:text-3xl;
+  @apply mt-6 text-xl font-normal text-[#c8102e] md:text-2xl lg:text-3xl;
 }
 
 .welcome_aside-text {
-  @apply mt-4 text-lg font-medium tracking-wide text-[#c8102e] md:text-2xl;
+  @apply mt-3 text-lg font-medium tracking-wide text-[#c8102e] md:text-xl lg:text-2xl;
+}
+
+.welcome_aside-subtext {
+  @apply m-0 text-lg font-medium tracking-wide text-[#c8102e] md:text-xl lg:text-2xl;
 }
 
 .welcome_aside-btn {
-  @apply mt-10 inline-block bg-[#060606] px-10 py-4 font-medium tracking-[0.2em] text-white uppercase shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white;
+  @apply inline-block bg-[#060606] rounded-sm px-10 py-4 font-medium tracking-[0.2em] text-white uppercase shadow-lg transition-all duration-300 hover:bg-[#060606] hover:text-white;
 }

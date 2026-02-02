@@ -3,7 +3,7 @@ import type { Brand } from "../../types";
 
 import { clsx } from "clsx";
 
-const { includes, ingredients, isDark, title, subtitle, btn } = Astro.props;
+const { includes, ingredients, isDark, title, subtitle, btn, id } = Astro.props;
 ---
 
 <div>
@@ -55,7 +55,7 @@ const { includes, ingredients, isDark, title, subtitle, btn } = Astro.props;
       ingredients.map(({ title, text }: Brand) => (
         <dl
           class={clsx(
-            "includes_description",
+            !isDark && "includes_description",
             isDark && "includes_dark_description",
           )}
         >
@@ -67,9 +67,7 @@ const { includes, ingredients, isDark, title, subtitle, btn } = Astro.props;
       ))
     }
   </div>
-  <a
-    href="#programa"
-    class={clsx(!isDark && "includes_btn", isDark && "includes_dark_btn")}
-    >{btn}</a
-  >
+  <button command="show-modal" commandfor={id} class={clsx(!isDark && "includes_btn", isDark && "includes_dark_btn")}>
+    {btn}
+  </button>
 </div>

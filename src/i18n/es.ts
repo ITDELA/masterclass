@@ -9,18 +9,20 @@ const es: Dictionary = {
   title: "El amor empieza contigo",
   hero: {
     href: "/masterclass/",
-    //href: "/",
+    // href: "/",
     alt: "GenetikPlux Logo",
     title: "Este día de San Valentín, el amor más importante empieza contigo",
   },
   welcome: {
-    title: "Conviértete en experto en Exosomas con GenetikPlux:",
+    title: "El mejor regalo de San Valentín eres TÚ",
     subtitle:
-      "Formación premium con la última tecnología en estética avanzada.",
-    text: "Certificación Profesional inmediata",
+      "Celebra el amor propio con cuidados para tu piel.",
+    text: "Tú eres tu prioridad.",
+    subtext: "Cuidarte también es amor.",
     btn: "REGALAR TAMBIÉN ES AMOR",
   },
   timeless: {
+    id: "timeless",
     subtitle: "El paquete contiene",
     includes: [
       "Reducción visible de líneas de expresión",
@@ -50,6 +52,7 @@ const es: Dictionary = {
     ],
   },
   renewed: {
+    id: "renewed",
     subtitle: "El paquete contiene",
     includes: [
       "Reduce ojeras y bolsas visiblemente",
@@ -78,6 +81,7 @@ const es: Dictionary = {
     ],
   },
   perfect: {
+    id: "perfect",
     subtitle: "El paquete contiene",
     includes: [
       "Reducción visible de manchas y hiperpigmentación",
@@ -133,17 +137,15 @@ const es: Dictionary = {
     contents: [
       {
         title: "Miami",
-        description:
-          "Vesículas, carga (Mirna/proteínas) vías PI3K/Akt, MAPK/ERK.",
+        description: "",
       },
       {
         title: "Boston",
-        description:
-          "Exosomas + PDRN + (rutas complementarias: vesicular, nuclear y mitocondrial).",
+        description: "",
       },
       {
         title: "New York",
-        description: "Selección de pH, capas y tiempos de aplicación.",
+        description: "",
       },
     ],
   },

@@ -14,13 +14,14 @@ const en: Dictionary = {
     title: "This Valentine’s Day, the most important love starts with you",
   },
   welcome: {
-    title: "Become an Exosome Expert with GenetikPlux:",
-    subtitle:
-      "Premium training with the latest technology in advanced aesthetics.",
-    text: "Immediate Professional Certification",
+    title: "The best Valentine's Day gift is YOU",
+    subtitle: "Celebrate self-love with skincare.",
+    text: "You are your priority.",
+    subtext: "Taking care of yourself is also love.",
     btn: "GIVING IS ALSO LOVE",
   },
   timeless: {
+    id: "timeless",
     subtitle: "The package contains",
     img: youth,
     title: "Timeless Youth",
@@ -50,6 +51,7 @@ const en: Dictionary = {
     ],
   },
   renewed: {
+    id: "renewed",
     subtitle: "The package contains",
     img: look,
     title: "A Renewed Perspective",
@@ -78,6 +80,7 @@ const en: Dictionary = {
     ],
   },
   perfect: {
+    id: "perfect",
     subtitle: "The package contains",
     img: brightness,
     btn: "Say goodbye to stains",
@@ -133,17 +136,15 @@ const en: Dictionary = {
     contents: [
       {
         title: "Miami",
-        description:
-          "Vesicles, cargo (Mirna/proteins) PI3K/Akt, MAPK/ERK pathways.",
+        description: "",
       },
       {
         title: "Boston",
-        description:
-          "Exosomes + PDRN + (complementary pathways: vesicular, nuclear, and mitochondrial).",
+        description: "",
       },
       {
         title: "New York",
-        description: "Selection of pH, layers, and application times.",
+        description: "",
       },
     ],
   },
