@@ -15,12 +15,22 @@
   @apply grid items-center gap-12 lg:grid-cols-2;
 }
 
-.includes_grid > :last-child {
+/* Móvil: imagen siempre primero (arriba) */
+.includes_grid > :first-child {
   @apply order-2 lg:order-1;
 }
 
-.includes_grid > :first-child {
+.includes_grid > :last-child {
   @apply order-1 lg:order-2;
+}
+
+/* Desktop isDark: invertir el orden */
+.includes_grid.isDark > :first-child {
+  @apply lg:order-2;
+}
+
+.includes_grid.isDark > :last-child {
+  @apply lg:order-1;
 }
 
 .includes_media {

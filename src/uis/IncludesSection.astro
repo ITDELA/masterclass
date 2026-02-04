@@ -10,39 +10,18 @@ const { title, btn, includes, ingredients, subtitle, img, alt, id, url } = inclu
 
 <section class={clsx(!isDark && "includes", isDark && "includes_dark")}>
   <div class="includes_container">
-    {
-      isDark && (
-        <div class="includes_grid isDark">
-          <List
-            includes={includes}
-            isDark={isDark}
-            title={title}
-            btn={btn}
-            id={id}
-            subtitle={subtitle}
-            ingredients={ingredients}
-            class="order-2 lg:order-1"
-            />
-          <Img img={img} alt={alt} class="order-1 lg:order-2" />
-        </div>
-      )
-    }
-    {
-      !isDark && (
-        <div class="includes_grid">
-          <Img img={img} alt={alt} />
-          <List
-            includes={includes}
-            isDark={isDark}
-            title={title}
-            btn={btn}
-            id={id}
-            subtitle={subtitle}
-            ingredients={ingredients}
-          />
-        </div>
-      )
-    }
+    <div class={clsx("includes_grid", isDark && "isDark")}>
+      <Img img={img} alt={alt} />
+      <List
+        includes={includes}
+        isDark={isDark}
+        title={title}
+        btn={btn}
+        id={id}
+        subtitle={subtitle}
+        ingredients={ingredients}
+      />
+    </div>
   </div>
 </section>
 <el-dialog>
