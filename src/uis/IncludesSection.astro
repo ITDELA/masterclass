@@ -11,16 +11,16 @@ const { title, btn, includes, ingredients, subtitle, img, alt, id, url } = inclu
 <section class={clsx(!isDark && "includes", isDark && "includes_dark")}>
   <div class="includes_container">
     <div class={clsx("includes_grid", isDark && "isDark")}>
-      <Img img={img} alt={alt} />
       <List
-        includes={includes}
-        isDark={isDark}
-        title={title}
-        btn={btn}
-        id={id}
-        subtitle={subtitle}
-        ingredients={ingredients}
+      includes={includes}
+      isDark={isDark}
+      title={title}
+      btn={btn}
+      id={id}
+      subtitle={subtitle}
+      ingredients={ingredients}
       />
+      <Img img={img} alt={alt} />
     </div>
   </div>
 </section>
