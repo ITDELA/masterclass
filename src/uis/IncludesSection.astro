@@ -1,6 +1,4 @@
 ---
-import type { Brand } from "../types";
-
 import { clsx } from "clsx";
 
 import Img from "./components/Img.astro";
@@ -14,7 +12,7 @@ const { title, btn, includes, ingredients, subtitle, img, alt, id, url } = inclu
   <div class="includes_container">
     {
       isDark && (
-        <div class="includes_grid">
+        <div class="includes_grid isDark">
           <List
             includes={includes}
             isDark={isDark}
@@ -23,8 +21,9 @@ const { title, btn, includes, ingredients, subtitle, img, alt, id, url } = inclu
             id={id}
             subtitle={subtitle}
             ingredients={ingredients}
-          />
-          <Img img={img} alt={alt} />
+            class="order-2 lg:order-1"
+            />
+          <Img img={img} alt={alt} class="order-1 lg:order-2" />
         </div>
       )
     }

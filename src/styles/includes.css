@@ -15,6 +15,14 @@
   @apply grid items-center gap-12 lg:grid-cols-2;
 }
 
+.includes_grid > :last-child {
+  @apply order-2 lg:order-1;
+}
+
+.includes_grid > :first-child {
+  @apply order-1 lg:order-2;
+}
+
 .includes_media {
   @apply relative overflow-hidden rounded-lg shadow-lg;
 }

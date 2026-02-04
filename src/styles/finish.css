@@ -13,11 +13,11 @@
 }
 
 .finish_media {
-  @apply relative overflow-hidden rounded-lg shadow-lg;
+  @apply relative overflow-hidden rounded-lg;
 }
 
 .finish_image {
-  @apply h-full w-full object-cover;
+    @apply w-full object-contain max-h-120;
 }
 
 .finish_title {
