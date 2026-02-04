@@ -10,6 +10,7 @@ interface Includes {
   btn: string;
   img: ImageMetadata;
   alt: string;
+  url: string;
   includes: string[];
   ingredients: Brand[];
 }
@@ -28,6 +29,8 @@ interface Dictionary {
     text: string;
     subtext: string;
     btn: string;
+    urls: string[];
+    labels: string[];
   };
   hero: {
     href: string;

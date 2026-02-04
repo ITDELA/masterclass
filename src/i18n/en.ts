@@ -19,6 +19,8 @@ const en: Dictionary = {
     text: "You are your priority.",
     subtext: "Taking care of yourself is also love.",
     btn: "GIVING IS ALSO LOVE",
+    urls: ["https://square.link/u/Lp6e4vrj", "https://square.link/u/XSBM2paF", "https://square.link/u/5rmXsgNn"],
+    labels: ["Timeless Youth", "Perfect Luminosity", "A Renewed Perspective"]
   },
   timeless: {
     id: "timeless",
@@ -27,6 +29,7 @@ const en: Dictionary = {
     title: "Timeless Youth",
     btn: "I want ageless skin",
     alt: "Zero Wrinkles",
+    url: "https://square.link/u/Lp6e4vrj",
     includes: [
       "Visible reduction of fine lines",
       "Firmer, more elastic skin",
@@ -57,6 +60,7 @@ const en: Dictionary = {
     title: "A Renewed Perspective",
     btn: "I want my gaze renewed",
     alt: "Zero Tired Eyes",
+    url: "https://square.link/u/5rmXsgNn",
     includes: [
       "Visibly reduces dark circles and puffiness",
       "24-hour intensive hydration",
@@ -86,6 +90,7 @@ const en: Dictionary = {
     btn: "Say goodbye to stains",
     alt: "Zero Stains",
     title: "Perfect Luminosity",
+    url: "https://square.link/u/XSBM2paF",
     includes: [
       "Visible reduction of dark spots and hyperpigmentation",
       "Even and radiant skin tone",
@@ -136,15 +141,15 @@ const en: Dictionary = {
     contents: [
       {
         title: "Miami",
-        description: "",
+        description: "8180 NW 36th St. Suite 408 Doral, FL 33166 US",
+      },
+      {
+        title: "Orlando",
+        description: "8751 commodity Cir, Suite 12, orlando FL 32819.",
       },
       {
         title: "Boston",
-        description: "",
-      },
-      {
-        title: "New York",
-        description: "",
+        description: "221 Boston post Road East, Marlborough, Massachusetts",
       },
     ],
   },

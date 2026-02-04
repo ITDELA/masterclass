@@ -20,6 +20,8 @@ const es: Dictionary = {
     text: "Tú eres tu prioridad.",
     subtext: "Cuidarte también es amor.",
     btn: "REGALAR TAMBIÉN ES AMOR",
+    urls: ["https://square.link/u/Lp6e4vrj", "https://square.link/u/XSBM2paF", "https://square.link/u/5rmXsgNn"],
+    labels: ["Juventud Atemporal", "Luminosidad Perfecta", "Mirada Renovada"]
   },
   timeless: {
     id: "timeless",
@@ -32,6 +34,7 @@ const es: Dictionary = {
       "Textura suave como la seda",
       "Luminosidad natural restaurada",
     ],
+    url: "https://square.link/u/Lp6e4vrj",
     title: "Juventud Atemporal",
     btn: "Quiero piel sin edad",
     img: youth,
@@ -54,6 +57,7 @@ const es: Dictionary = {
   renewed: {
     id: "renewed",
     subtitle: "El paquete contiene",
+    url: "https://square.link/u/5rmXsgNn",
     includes: [
       "Reduce ojeras y bolsas visiblemente",
       "Hidratación intensiva 24 horas",
@@ -83,6 +87,7 @@ const es: Dictionary = {
   perfect: {
     id: "perfect",
     subtitle: "El paquete contiene",
+    url: "https://square.link/u/XSBM2paF",
     includes: [
       "Reducción visible de manchas y hiperpigmentación",
       "Tono de piel unificado y luminoso",
@@ -137,15 +142,15 @@ const es: Dictionary = {
     contents: [
       {
         title: "Miami",
-        description: "",
+        description: "8180 NW 36th St. Suite 408 Doral, FL 33166 EE. UU.",
+      },
+      {
+        title: "Orlando",
+        description: "8751 commodity Cir, Suite 12, Orlando FL 32819.",
       },
       {
         title: "Boston",
-        description: "",
-      },
-      {
-        title: "New York",
-        description: "",
+        description: "221 Boston Post Road Este, Marlborough, Massachusetts",
       },
     ],
   },

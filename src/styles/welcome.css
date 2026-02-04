@@ -8,69 +8,17 @@
   @apply container mx-auto px-6;
 }
 
-.welcome_title {
-  @apply mb-12 text-center text-4xl font-normal text-[#060606] md:text-5xl;
-  font-family: "Playfair Display", serif;
-}
-
-.welcome_grid {
-  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5;
-}
-
-.welcome_card {
-  @apply flex w-3xs flex-col rounded-md bg-[#060606] p-6 text-center transition-all duration-300 hover:scale-105;
-}
-
-.welcome_card-date {
-  @apply mb-2 text-4xl font-bold text-white md:text-5xl;
-  font-family: "Playfair Display", serif;
-}
-
-.welcome_card-month {
-  @apply mb-4 text-xl font-medium text-white uppercase;
-}
-
-.welcome_card-tour {
-  @apply mb-1 text-base text-white italic;
-}
-
-.welcome_card-city {
-  @apply mb-2 text-base font-bold text-white italic;
-}
-
-.welcome_card-venue {
-  @apply mb-6 text-base text-white/80;
-}
-
-.welcome_card-btn {
-  @apply mt-auto rounded-lg bg-white px-6 py-3 text-xl font-medium text-[#060606] transition-all duration-300 hover:bg-[#bfa792] hover:text-white;
-}
-
-/** */
-
-.welcome_aside {
-  @apply relative z-10 flex h-full items-center;
-}
-
-.welcome_aside-wrapper {
-  @apply container mx-auto;
-}
-
 .welcome_aside-title {
   @apply text-center text-3xl text-[#c8102e] md:text-5xl lg:text-7xl;
   font-family: "Grotesk", sans-serif;
 }
 
 .welcome_aside-subtitle {
-  @apply mt-6 text-xl font-normal text-[#c8102e] md:text-2xl lg:text-3xl;
+  @apply text-center my-12 text-xl font-normal text-[#c8102e] md:text-2xl lg:text-3xl;
 }
 
 .welcome_aside-text {
-  @apply mt-3 text-lg font-medium tracking-wide text-[#c8102e] md:text-xl lg:text-2xl;
-}
-
-.welcome_aside-subtext {
-  @apply m-0 text-lg font-medium tracking-wide text-[#c8102e] md:text-xl lg:text-2xl;
+  @apply text-center my-2 text-lg font-medium text-[#c8102e] md:text-xl lg:text-2xl;
 }
 
 .welcome_aside-btn {
